@@ -1,6 +1,6 @@
 
 //base
-@import "../base/variables";
+@import "../base/bootstrap_var";
 @import "../base/mixin";
 @import "../base/reset";
 @import "../vender/bootstraps/bootstrap";
@@ -11,21 +11,5 @@
 @import "../vender/layout.min";
 //gigi
 @import "../others/gigimodify";
+@import "../others/bryanmodify";
 // @import "../vender/font-awesome.min";
-body {
-
-}
-//start
-// .wrapper {
-//     width: 200px;
-//     @include margin-auto();
-//     background-color: rgb(245, 22, 90);
-//     text-align: center;
-//     height: 100px;
-//    .imgs {
-//      background-image: url('../images/01.jpg');
-//      height: 460px;
-//      width: 980px;
-//      display: block;
-//    }
-// }
