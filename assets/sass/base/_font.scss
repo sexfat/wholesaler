@@ -1,0 +1,10 @@
+// ----------------------------------------------------------------------
+// Font family
+// ----------------------------------------------------------------------
+@import "../base/variables";
+body {
+  font-weight: normal; // font-family: $helvetica;
+  font-family: $system;
+  line-height: $line-height-base;
+  letter-spacing: inherit;
+}
