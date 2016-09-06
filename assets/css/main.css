@@ -1099,7 +1099,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Microsoft JhengHei", "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -5213,7 +5213,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Microsoft JhengHei", "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5319,7 +5319,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Microsoft JhengHei", "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7303,16 +7303,16 @@ h6 {
   font-weight: 300; }
 
 .bars {
-  font-family: "Microsoft JhengHei", "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 .chart {
-  font-family: "Microsoft JhengHei", "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 .pie {
-  font-family: "Microsoft JhengHei", "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 .primary-font {
-  font-family: "Microsoft JhengHei", "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 h1 small {
   color: #444444; }
@@ -39639,4 +39639,4 @@ body.page-md {
   color: #fff; }
 
 .navbar.page-header .sidebar-toggler.menu-toggler {
-  margin: 13px 10px 0; }
+  margin: 13px 14px 0; }
