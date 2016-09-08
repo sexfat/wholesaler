@@ -17,7 +17,8 @@ module.exports = function(grunt) {
                 files: ['*.html']
             },
             js: {
-                files: ['assets/js/*.js']
+                files: ['assets/js/*.js'],
+                tasks: ['browserify']
             }
         },
         //sass
@@ -63,6 +64,22 @@ module.exports = function(grunt) {
             }
         },
 
+
+
+      // browserify
+      browserify: {
+            build: {
+              // src: 'views/js/learnjs.js',
+              // dest: 'views/js/output.js',
+              // expand: true,
+              // cwd: 'assets/js/',
+              src: 'assets/js/main.js',
+              dest: 'assets/js/output.js'
+            }
+      },
+
+
+
         //打包用
         compress: {
             main: {
@@ -94,43 +111,42 @@ module.exports = function(grunt) {
                 }]
             }
         },
-
-
-        copy: {
-            main: {
-                files: [
-                    // includes files within path
-                    {
-                        expand: true,
-                        cwd: 'assets/css/',
-                        src: ['main.css'],
-                        dest: 'online/css'
-                    }, {
-                        expand: true,
-                        cwd: 'assets/js/',
-                        src: ['*.js'],
-                        dest: 'online/js'
-                    }, {
-                        expand: true,
-                        cwd: 'assets/img/',
-                        src: ['*'],
-                        dest: 'online/img'
-                    }, {
-                        expand: true,
-                        src: ['*.html'],
-                        dest: 'online/'
-                    },
-                    // includes files within path and its sub-directories
-                    //  {expand: true, src: ['path/**'], dest: 'dest/'},
-
-                    // makes all src relative to cwd
-                    //  {expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
-
-                    // flattens results to a single level
-                    //  {expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'},
-                ],
-            },
-        }
+        //
+        // copy: {
+        //     main: {
+        //         files: [
+        //             // includes files within path
+        //             {
+        //                 expand: true,
+        //                 cwd: 'assets/css/',
+        //                 src: ['main.css'],
+        //                 dest: 'online/css'
+        //             }, {
+        //                 expand: true,
+        //                 cwd: 'assets/js/',
+        //                 src: ['*.js'],
+        //                 dest: 'online/js'
+        //             }, {
+        //                 expand: true,
+        //                 cwd: 'assets/img/',
+        //                 src: ['*'],
+        //                 dest: 'online/img'
+        //             }, {
+        //                 expand: true,
+        //                 src: ['*.html'],
+        //                 dest: 'online/'
+        //             },
+        //             // includes files within path and its sub-directories
+        //             //  {expand: true, src: ['path/**'], dest: 'dest/'},
+        //
+        //             // makes all src relative to cwd
+        //             //  {expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
+        //
+        //             // flattens results to a single level
+        //             //  {expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'},
+        //         ],
+        //     },
+        // },
 
 
 
@@ -143,16 +159,16 @@ module.exports = function(grunt) {
     // grunt.loadNpmTasks('grunt-contrib-jade');
     // grunt.loadNpmTasks('grunt-contrib-jshint');
     // grunt.loadNpmTasks('grunt-contrib-concat');
-    // grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // define default task
     // grunt.registerTask('default', ['browserSync','browserify', 'watch', 'jade', 'jshint']);
-    grunt.registerTask('default', ['browserSync', 'watch']);
-    grunt.registerTask('mini', ['cssmin']);
-    grunt.registerTask('build', ['compress']);
-    grunt.registerTask('copy', ['copy']);
+    grunt.registerTask('default', ['browserSync', 'browserify', 'watch']);
+    // grunt.registerTask('mini', ['cssmin']);
+    // grunt.registerTask('build', ['compress']);
+    // grunt.registerTask('copy', ['copy']);
 
 
 };

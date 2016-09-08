@@ -1,0 +1,20 @@
+
+//base
+@import "../base/bootstrap_var";
+@import "../base/mixin";
+@import "../base/icon";
+@import "../base/reset";
+@import "../vender/bootstraps/bootstrap";
+// header layout
+@import "../modules/header";
+@import "../../libs/font-awesome/scss/font-awesome";
+
+// @import "font-awesome-sprockets";
+// @import "../font-awesome";
+
+.clearfix {
+  @include clearfix();
+}
+body {
+@include box-sizing(inherit);
+}
