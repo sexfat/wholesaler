@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                 tasks: ['sass']
             },
             styles: {
-                files: ['assets/css/mini/minicss.css'],
+                files: ['assets/css/main.css' ],
                 tasks: ['cssmin']
             },
             html: {
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         cssmin: {
             target: {
                 files: {
-                    'assets/css/mini/minicss.css': ['assets/css/*.css']
+                    'assets/css/minicss.css': ['assets/css/main.css']
                 }
             }
         },
@@ -69,12 +69,12 @@ module.exports = function(grunt) {
       // browserify
       browserify: {
             build: {
-              // src: 'views/js/learnjs.js',
-              // dest: 'views/js/output.js',
+              src: 'assets/js/all.js',
+              dest: 'assets/js/output_01.js'
               // expand: true,
               // cwd: 'assets/js/',
-              src: 'assets/js/main.js',
-              dest: 'assets/js/output.js'
+              // src: 'assets/js/main.js',
+              // dest: 'assets/js/output.js'
             }
       },
 
@@ -90,10 +90,20 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'assets/css/mini',
-                    src: ['*.css'],
+                    cwd: 'assets/css/',
+                    src: ['minicss.css'],
                     dest: 'assets/css/'
                 }, {
+                    expand: true,
+                    cwd: 'assets/font-awesome/',
+                    src: ['css/*' ,'fonts/*'],
+                    dest: 'assets/font-awesome/'
+                }, {
+                    expand: true,
+                    cwd: 'assets/simple-line-icons/',
+                    src: ['fonts/*' ,'*'],
+                    dest: 'assets/simple-line-icons/'
+                },{
                     expand: true,
                     cwd: 'assets/img/',
                     src: ['*'],
@@ -101,7 +111,7 @@ module.exports = function(grunt) {
                 }, {
                     expand: true,
                     cwd: './',
-                    src: ['*.html'],
+                    src: ['index.html'],
                     dest: '/'
                 }, {
                     expand: true,
@@ -165,9 +175,9 @@ module.exports = function(grunt) {
 
     // define default task
     // grunt.registerTask('default', ['browserSync','browserify', 'watch', 'jade', 'jshint']);
-    grunt.registerTask('default', ['browserSync', 'browserify', 'watch']);
+    grunt.registerTask('default', ['browserSync', 'browserify', 'watch', 'cssmin']);
     // grunt.registerTask('mini', ['cssmin']);
-    // grunt.registerTask('build', ['compress']);
+    grunt.registerTask('build', ['compress']);
     // grunt.registerTask('copy', ['copy']);
 
 

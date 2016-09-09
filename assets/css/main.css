@@ -39707,7 +39707,7 @@ body.page-md {
   height: 80px; }
   .header_top .logos {
     margin-left: 20px;
-    margin-top: 10px; }
+    margin-top: 14px; }
   .header_top .button {
     margin-top: -20px;
     margin-right: 10px; }
@@ -39738,3 +39738,9 @@ body.page-md {
 
 .navbar.page-header .top-menu .navbar-nav > li.dropdown .dropdown-menu {
   margin-top: -10px; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
