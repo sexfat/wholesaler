@@ -9,14 +9,39 @@
         }
     }
 }
-.navbar.page-header
-.sidebar-toggler
-.menu-toggler {
-    margin: 13px 14px 0;
+.navbar.page-header .sidebar-toggler.menu-toggler {
+    margin: 15px 0 0;
 }
-
-
 .navbar.page-header {
     background: #a7aebf;
     height: 20px;
+}
+.nav-panel > li > a {
+    // border-radius: 4px 4px 0 0;
+    // border: 1px solid transparent;
+    // border-image: none;
+    // line-height: 1.4285;
+    margin-right: 0;
+}
+.nav-panel {
+    .line {
+        background-color: #fff;
+        display: block;
+        float: left;
+        width: 1px;
+        height: 15px;
+        margin-top: 14px;
+    }
+}
+.page-sidebar-closed-hide-logo.page-sidebar-closed .navbar.page-header .sidebar-toggler.menu-toggler {
+    margin-right: 0;
+}
+
+.header_top {
+  height: 100px;
+    .btn-color_white {
+     a,a:hover  {
+        color: #fff;
+      }
+    }
 }

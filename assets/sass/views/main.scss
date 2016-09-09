@@ -13,3 +13,8 @@
 @import "../others/gigimodify";
 @import "../others/bryanmodify";
 // @import "../vender/font-awesome.min";
+
+
+.clearfix {
+  @include clearfix();
+}

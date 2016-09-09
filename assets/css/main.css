@@ -39681,11 +39681,34 @@ body.page-md {
 .nav-panel li a:hover {
   color: #fff; }
 
-.navbar.page-header
-.sidebar-toggler
-.menu-toggler {
-  margin: 13px 14px 0; }
+.navbar.page-header .sidebar-toggler.menu-toggler {
+  margin: 15px 0 0; }
 
 .navbar.page-header {
   background: #a7aebf;
   height: 20px; }
+
+.nav-panel > li > a {
+  margin-right: 0; }
+
+.nav-panel .line {
+  background-color: #fff;
+  display: block;
+  float: left;
+  width: 1px;
+  height: 15px;
+  margin-top: 14px; }
+
+.page-sidebar-closed-hide-logo.page-sidebar-closed .navbar.page-header .sidebar-toggler.menu-toggler {
+  margin-right: 0; }
+
+.header_top {
+  height: 100px; }
+  .header_top .btn-color_white a, .header_top .btn-color_white a:hover {
+    color: #fff; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
