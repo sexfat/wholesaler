@@ -39681,11 +39681,24 @@ body.page-md {
 .nav-panel li a:hover {
   color: #fff; }
 
-.navbar.page-header
-.sidebar-toggler
-.menu-toggler {
+.navbar.page-header .sidebar-toggler .menu-toggler {
   margin: 13px 14px 0; }
 
 .navbar.page-header {
   background: #a7aebf;
   height: 20px; }
+
+.nav-panel .line {
+  height: 15px;
+  display: block;
+  float: left;
+  background-color: #fff;
+  width: 1px;
+  margin-top: 14px; }
+
+.nav-panel > li > a {
+  margin-right: 0px; }
+
+.header_top {
+  background-color: #fff;
+  height: 100px; }

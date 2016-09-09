@@ -9,14 +9,39 @@
         }
     }
 }
-.navbar.page-header
-.sidebar-toggler
-.menu-toggler {
+.navbar.page-header .sidebar-toggler .menu-toggler {
     margin: 13px 14px 0;
 }
-
-
 .navbar.page-header {
     background: #a7aebf;
     height: 20px;
+}
+.nav-panel {
+    .line {
+        // border-right: 1px #fff solid;
+        height: 15px;
+        display: block;
+        float: left;
+        background-color: #fff;
+        width: 1px;
+        margin-top: 14px;
+    }
+}
+
+.nav-panel > li > a {
+    // border-radius: 4px 4px 0 0;
+    // border: 1px solid transparent;
+    // border-image: none;
+    // line-height: 1.4285;
+    margin-right: 0px;
+}
+
+.header_top {
+
+background-color: #fff;
+height: 100px;
+
+
+
+
 }
