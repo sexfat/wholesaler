@@ -39738,9 +39738,3 @@ body.page-md {
 
 .navbar.page-header .top-menu .navbar-nav > li.dropdown .dropdown-menu {
   margin-top: -10px; }
-
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table; }
-.clearfix:after {
-  clear: both; }
