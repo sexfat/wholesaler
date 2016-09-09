@@ -39697,8 +39697,44 @@ body.page-md {
   margin-top: 14px; }
 
 .nav-panel > li > a {
-  margin-right: 0px; }
+  margin-right: 0; }
+
+.nav-panel > li > a:hover {
+  color: #337ab7; }
 
 .header_top {
   background-color: #fff;
-  height: 100px; }
+  height: 80px; }
+  .header_top .logos {
+    margin-left: 20px;
+    margin-top: 10px; }
+  .header_top .button {
+    margin-top: -20px;
+    margin-right: 10px; }
+
+.page-sidebar-closed-hide-logo.page-sidebar-closed .navbar.page-header .sidebar-toggler.menu-toggler {
+  margin-right: 0; }
+
+.navbar.page-header .sidebar-toggler.menu-toggler {
+  margin: 14px 0 0 19px; }
+
+.page-header-inner {
+  height: 30px; }
+
+.navbar-nav > li > a {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.navbar {
+  font-size: 0.8rem; }
+  .navbar.page-header {
+    background: #e2e2e2; }
+  .navbar .img-circle {
+    height: 20px !important;
+    width: 20px; }
+
+.navbar.page-header .top-menu .navbar-nav > li.dropdown-user .dropdown-toggle {
+  padding: 4px 10px 10px; }
+
+.navbar.page-header .top-menu .navbar-nav > li.dropdown .dropdown-menu {
+  margin-top: -10px; }
