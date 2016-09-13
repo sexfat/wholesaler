@@ -5837,62 +5837,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-header {
-  width: 100%;
-  display: block;
-  position: fixed; }
-  header #nav_topbar {
-    padding-top: 6px;
-    font-size: 0.4rem;
-    height: 30px;
-    background-color: #ececec; }
-    header #nav_topbar .wrapper {
-      width: 98%;
-      margin-left: auto;
-      margin-right: auto; }
-      header #nav_topbar .wrapper .nav_top-link li {
-        display: inline-block;
-        margin-left: 30px; }
-      header #nav_topbar .wrapper .nav_top-info {
-        margin-right: 80px; }
-        header #nav_topbar .wrapper .nav_top-info li {
-          display: inline-block;
-          margin-left: 30px; }
-      header #nav_topbar .wrapper .person {
-        font-size: 1.5rem;
-        margin-top: -3px;
-        display: inline-block;
-        margin-left: 60px; }
-      header #nav_topbar .wrapper .img-circle {
-        width: 22px;
-        margin-right: 4px; }
-  header .header {
-    height: 100px;
-    width: 98%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto; }
-    header .header .logo {
-      margin-top: 15px;
-      position: relative; }
-  header .mainnav {
-    height: 50px;
-    background-color: #247fe9;
-    padding-top: 15px; }
-    header .mainnav ul {
-      margin: 0;
-      padding: 0;
-      width: 98%;
-      margin-left: auto;
-      margin-right: auto; }
-      header .mainnav ul li {
-        font-size: 1.5rem;
-        display: inline-block;
-        margin-left: 30px; }
-        header .mainnav ul li a,
-        header .mainnav ul li a:hover {
-          color: #fff; }
-
 .nav-panel-content {
   background: #3598dc; }
 
@@ -39812,3 +39756,127 @@ body.page-md {
   display: table; }
 .clearfix:after {
   clear: both; }
+
+.label-danger {
+  margin-right: 10px;
+  float: left; }
+
+.label_text {
+  float: left;
+  width: 400px; }
+
+/*!
+ * Jasny Bootstrap v3.1.3 (http://jasny.github.io/bootstrap)
+ * Copyright 2012-2014 Arnold Daniels
+ * Licensed under Apache-2.0 (https://github.com/jasny/bootstrap/blob/master/LICENSE)
+ */
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle; }
+
+.btn-file > input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 23px;
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  direction: ltr; }
+
+.fileinput {
+  display: inline-block;
+  margin-bottom: 9px; }
+
+.fileinput .form-control {
+  display: inline-block;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  cursor: text; }
+
+/*
+修改 CSSmargin-bottom: 5px;
+business_info.html-Business Logo 圖片間距
+*/
+.fileinput .thumbnail {
+  display: inline-block;
+  margin-bottom: 15px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle; }
+
+.fileinput .thumbnail > img {
+  max-height: 100%; }
+
+.fileinput .btn {
+  vertical-align: middle; }
+
+.fileinput-exists .fileinput-new,
+.fileinput-new .fileinput-exists {
+  display: none; }
+
+.fileinput-inline .fileinput-controls {
+  display: inline; }
+
+.fileinput-filename {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle; }
+
+.form-control .fileinput-filename {
+  vertical-align: bottom; }
+
+.fileinput.input-group {
+  display: table; }
+
+.fileinput.input-group > * {
+  position: relative;
+  z-index: 2; }
+
+.fileinput.input-group > .btn-file {
+  z-index: 1; }
+
+.fileinput-new.input-group .btn-file,
+.fileinput-new .input-group .btn-file {
+  border-radius: 0 4px 4px 0; }
+
+.fileinput-new.input-group .btn-file.btn-xs, .fileinput-new.input-group .btn-group-xs > .btn-file.btn,
+.fileinput-new .input-group .btn-file.btn-xs,
+.fileinput-new .input-group .btn-group-xs > .btn-file.btn,
+.fileinput-new.input-group .btn-file.btn-sm,
+.fileinput-new.input-group .btn-group-sm > .btn-file.btn,
+.fileinput-new .input-group .btn-file.btn-sm,
+.fileinput-new .input-group .btn-group-sm > .btn-file.btn {
+  border-radius: 0 3px 3px 0; }
+
+.fileinput-new.input-group .btn-file.btn-lg, .fileinput-new.input-group .btn-group-lg > .btn-file.btn,
+.fileinput-new .input-group .btn-file.btn-lg,
+.fileinput-new .input-group .btn-group-lg > .btn-file.btn {
+  border-radius: 0 6px 6px 0; }
+
+.form-group.has-warning .fileinput .fileinput-preview {
+  color: #8a6d3b; }
+
+.form-group.has-warning .fileinput .thumbnail {
+  border-color: #faebcc; }
+
+.form-group.has-error .fileinput .fileinput-preview {
+  color: #a94442; }
+
+.form-group.has-error .fileinput .thumbnail {
+  border-color: #ebccd1; }
+
+.form-group.has-success .fileinput .fileinput-preview {
+  color: #3c763d; }
+
+.form-group.has-success .fileinput .thumbnail {
+  border-color: #d6e9c6; }
+
+.input-group-addon:not(:first-child) {
+  border-left: 0; }

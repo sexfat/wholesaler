@@ -4,6 +4,7 @@ global.jQuery = $;
 
 // plugin
 require('../../assets/libs/bootstrap/dist/js/bootstrap.js');
+require('../../assets/js/bootstrap-fileinput.js');
 
 //code
 

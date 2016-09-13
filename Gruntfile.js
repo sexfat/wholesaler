@@ -107,6 +107,8 @@ module.exports = function(grunt) {
                         match: 'main.css',
                         replacement: 'main.min.css'
                     }],
+
+                    //接受使用字串
                     usePrefix: false
                 },
                 files: [{

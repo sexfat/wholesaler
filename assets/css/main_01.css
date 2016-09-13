@@ -5846,62 +5846,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-header {
-  width: 100%;
-  display: block;
-  position: fixed; }
-  header #nav_topbar {
-    padding-top: 6px;
-    font-size: 0.4rem;
-    height: 30px;
-    background-color: #ececec; }
-    header #nav_topbar .wrapper {
-      width: 98%;
-      margin-left: auto;
-      margin-right: auto; }
-      header #nav_topbar .wrapper .nav_top-link li {
-        display: inline-block;
-        margin-left: 30px; }
-      header #nav_topbar .wrapper .nav_top-info {
-        margin-right: 80px; }
-        header #nav_topbar .wrapper .nav_top-info li {
-          display: inline-block;
-          margin-left: 30px; }
-      header #nav_topbar .wrapper .person {
-        font-size: 1.5rem;
-        margin-top: -3px;
-        display: inline-block;
-        margin-left: 60px; }
-      header #nav_topbar .wrapper .img-circle {
-        width: 22px;
-        margin-right: 4px; }
-  header .header {
-    height: 100px;
-    width: 98%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto; }
-    header .header .logo {
-      margin-top: 15px;
-      position: relative; }
-  header .mainnav {
-    height: 50px;
-    background-color: #247fe9;
-    padding-top: 15px; }
-    header .mainnav ul {
-      margin: 0;
-      padding: 0;
-      width: 98%;
-      margin-left: auto;
-      margin-right: auto; }
-      header .mainnav ul li {
-        font-size: 1.5rem;
-        display: inline-block;
-        margin-left: 30px; }
-        header .mainnav ul li a,
-        header .mainnav ul li a:hover {
-          color: #fff; }
-
 .nav-panel-content {
   background: #3598dc; }
 
