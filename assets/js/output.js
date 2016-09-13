@@ -10,7 +10,14 @@ require('../../assets/libs/bootstrap/dist/js/bootstrap.js');
 //code
 
 $(document).ready(function(){
-console.log("hello world");
+console.log("hello worlds");
+
+
+
+
+
+
+
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})

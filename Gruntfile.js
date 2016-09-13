@@ -3,6 +3,21 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
 
+        // //jade
+        // jade: {
+        //     compile: {
+        //         options: {
+        //             pretty: true,
+        //             expand: true,
+        //         },
+        //         files: {
+        //             "jade_template.html": ["assets/app/main.jade"]
+        //         },
+        //
+        //     }
+        // },
+
+
         //watch
         watch: {
             css: {
@@ -10,7 +25,7 @@ module.exports = function(grunt) {
                 tasks: ['sass']
             },
             styles: {
-                files: ['assets/css/main.css' ],
+                files: ['assets/css/main.css'],
                 tasks: ['cssmin']
             },
             html: {
@@ -20,6 +35,10 @@ module.exports = function(grunt) {
                 files: ['assets/js/*.js'],
                 tasks: ['browserify']
             }
+            // jade: {
+            //   files: ['assets/app/*.jade' , 'assets/app/**/*.jade' ],
+            //   tasks: ['jade']
+            // }
         },
         //sass
         sass: {
@@ -29,7 +48,7 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'assets/sass/views/',
+                    cwd: 'assets/sass/views',
                     src: ['*.scss'],
                     dest: 'assets/css/',
                     ext: '.css'
@@ -40,7 +59,7 @@ module.exports = function(grunt) {
         cssmin: {
             target: {
                 files: {
-                    'assets/css/minicss.css': ['assets/css/main.css']
+                    'assets/css/main.min.css': ['assets/css/main.css']
                 }
             }
         },
@@ -66,21 +85,53 @@ module.exports = function(grunt) {
 
 
 
-      // browserify
-      browserify: {
+        // browserify
+        browserify: {
             build: {
-              src: 'assets/js/all.js',
-              dest: 'assets/js/output_01.js'
-              // expand: true,
-              // cwd: 'assets/js/',
-              // src: 'assets/js/main.js',
-              // dest: 'assets/js/output.js'
+                // src: 'assets/js/all.js',
+                // dest: 'assets/js/output_01.js'
+                // expand: true,
+                // cwd: 'assets/js/',
+                src: 'assets/js/main.js',
+                dest: 'assets/js/output.js'
             }
-      },
+        },
 
 
 
         //打包用
+        replace: {
+            dist: {
+                options: {
+                    patterns: [{
+                        match: 'main.css',
+                        replacement: 'main.min.css'
+                    }],
+                    usePrefix: false
+                },
+                files: [{
+                    expand: true,
+                    flatten: true,
+                    overwrite: true,
+                    src: ['index.html'],
+                    dest: 'online/'
+                }]
+            }
+        },
+        // replace: {
+        //     dist: {
+        //         options: {
+        //             patterns: [{
+        //                 match: 'timestamp',
+        //                 replacement: '<%= new Date().getTime() %>'
+        //             }]
+        //         },
+        //         files: [{
+        //             src: ['index.html'],
+        //             dest: 'online/index.html'
+        //         }]
+        //     }
+        // },
         compress: {
             main: {
                 options: {
@@ -96,22 +147,27 @@ module.exports = function(grunt) {
                 }, {
                     expand: true,
                     cwd: 'assets/font-awesome/',
-                    src: ['css/*' ,'fonts/*'],
+                    src: ['css/*', 'fonts/*'],
                     dest: 'assets/font-awesome/'
                 }, {
                     expand: true,
                     cwd: 'assets/simple-line-icons/',
-                    src: ['fonts/*' ,'*'],
+                    src: ['fonts/*', '*'],
                     dest: 'assets/simple-line-icons/'
-                },{
+                }, {
                     expand: true,
                     cwd: 'assets/img/',
                     src: ['*'],
                     dest: 'assets/img/'
                 }, {
                     expand: true,
+                    cwd: 'assets/css/',
+                    src: ['*.css'],
+                    dest: 'assets/css/'
+                }, {
+                    expand: true,
                     cwd: './',
-                    src: ['index.html'],
+                    src: ['*.html'],
                     dest: '/'
                 }, {
                     expand: true,
@@ -120,7 +176,8 @@ module.exports = function(grunt) {
                     dest: 'assets/js/'
                 }]
             }
-        },
+        }
+
         //
         // copy: {
         //     main: {
@@ -166,18 +223,20 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    // grunt.loadNpmTasks('grunt-contrib-jade');
+    grunt.loadNpmTasks('grunt-contrib-jade');
     // grunt.loadNpmTasks('grunt-contrib-jshint');
     // grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-replace');
+
 
     // define default task
     // grunt.registerTask('default', ['browserSync','browserify', 'watch', 'jade', 'jshint']);
-    grunt.registerTask('default', ['browserSync', 'browserify', 'watch', 'cssmin']);
+    grunt.registerTask('default', ['browserSync', 'browserify', 'watch']);
     // grunt.registerTask('mini', ['cssmin']);
-    grunt.registerTask('build', ['compress']);
+    grunt.registerTask('build', ['cssmin', 'compress', 'replace']);
     // grunt.registerTask('copy', ['copy']);
 
 

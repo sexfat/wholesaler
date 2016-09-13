@@ -5902,6 +5902,71 @@ header {
         header .mainnav ul li a:hover {
           color: #fff; }
 
+.nav-panel-content {
+  background: #3598dc; }
+
+.nav-panel li a,
+.nav-panel li a:hover {
+  color: #fff; }
+
+.navbar.page-header .sidebar-toggler .menu-toggler {
+  margin: 13px 14px 0; }
+
+.navbar.page-header {
+  background: #a7aebf;
+  height: 20px; }
+
+.nav-panel .line {
+  height: 15px;
+  display: block;
+  float: left;
+  background-color: #fff;
+  width: 1px;
+  margin-top: 14px; }
+
+.nav-panel > li > a {
+  margin-right: 0; }
+
+.nav-panel > li > a:hover {
+  color: #337ab7; }
+
+.header_top {
+  background-color: #fff;
+  height: 80px; }
+  .header_top .logos {
+    margin-left: 20px;
+    margin-top: 14px; }
+  .header_top .button {
+    margin-top: -20px;
+    margin-right: 10px; }
+
+.page-sidebar-closed-hide-logo.page-sidebar-closed .navbar.page-header .sidebar-toggler.menu-toggler {
+  margin-right: 0; }
+
+.navbar.page-header .sidebar-toggler.menu-toggler {
+  margin: 14px 0 0 19px; }
+
+.page-header-inner {
+  height: 30px; }
+
+.navbar-nav > li > a {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.navbar {
+  font-size: 0.8rem; }
+  .navbar.page-header {
+    background: #e2e2e2; }
+  .navbar .img-circle {
+    height: 20px !important;
+    width: 20px; }
+
+.navbar.page-header .top-menu .navbar-nav > li.dropdown-user .dropdown-toggle {
+  padding: 4px 10px 10px; }
+
+.navbar.page-header .top-menu .navbar-nav > li.dropdown .dropdown-menu {
+  margin-top: -10px; }
+
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

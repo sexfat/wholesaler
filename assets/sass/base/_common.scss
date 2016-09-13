@@ -1,0 +1,12 @@
+.breadcrumb {
+
+ a,a:hover {
+  // text-decoration: underline !important;
+ }
+ li span{
+   color : #797979;
+ }
+}
+.clearfix {
+  @include clearfix();
+}

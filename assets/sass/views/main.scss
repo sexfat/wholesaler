@@ -12,8 +12,7 @@
 //gigi
 @import "../others/gigimodify";
 @import "../others/bryanmodify";
+@import "../base/common";
 // @import "../vender/font-awesome.min";
-
-.clearfix {
-  @include clearfix();
-}
+//page
+@import "../page/info";
