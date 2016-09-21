@@ -36,7 +36,7 @@ Open the Mac's  Terminal.app / 終端機
 Double-check - you can on "Terminal.app / 終端機"  type   輸入  `sass -v` 看是否有灌成功
  如果有成功 會return  `Sass 3.4.22`  版本
 
- # Grunt 環境安裝
+# Grunt環境安裝
 
  ![grunt](http://www.gruntjs.net/img/grunt-logo.png)
 
@@ -50,7 +50,7 @@ Double-check - you can on "Terminal.app / 終端機"  type   輸入  `sass -v` �
 
 
 
- ## Grunt 基本架構
+## Grunt 基本架構
 
  ```javascript
  module.exports = function(grunt) {
@@ -72,7 +72,7 @@ Double-check - you can on "Terminal.app / 終端機"  type   輸入  `sass -v` �
  ```
 
 
- ## 檔案名稱
+## 檔案名稱
 
  1. package.json
  2. Gruntfile.js
@@ -143,7 +143,7 @@ Double-check - you can on "Terminal.app / 終端機"  type   輸入  `sass -v` �
  [Uglify github](https://github.com/sexfat/basic)
 
 
- ## Grunt minicss plugin structure
+## Grunt minicss plugin structure
 
  **Gruntfile.js**
 
@@ -209,13 +209,3 @@ Double-check - you can on "Terminal.app / 終端機"  type   輸入  `sass -v` �
 
  到cmd  
   c: / 資料夾名稱 / grunt  
-
-
- ###  練習下載
-   [minicss github](https://github.com/sexfat/minicss)
-
-
- ## Grunt  sass + watch + boswersync
-
- ###  工作檔下載
-   [boswersync github](https://github.com/sexfat/boswersync)
