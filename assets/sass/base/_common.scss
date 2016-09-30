@@ -1,12 +1,56 @@
 .breadcrumb {
+    a,
+    a:hover {
+        // text-decoration: underline !important;
+    }
 
- a,a:hover {
-  // text-decoration: underline !important;
- }
- li span{
-   color : #797979;
- }
+    li span {
+        color: #797979;
+    }
 }
+
 .clearfix {
-  @include clearfix();
+    @include clearfix();
 }
+//button
+
+.btn_submit {
+    padding: 6px 44px;
+}
+
+.help-block {
+    font-size: 1.3rem;
+    color: #9c9c9c;
+}
+
+.slash {
+    color: #e7505a;
+    margin-top: 2px;
+}
+
+sup {
+    top: -0.3em;
+}
+
+.btn-fullscreen {
+    display: none;
+}
+
+//from
+.form-control {
+  option:first {
+      color: #999;
+  }
+}
+.inlineblock {
+display: inline-block;
+}
+.input_link {
+margin-left: 20px;
+  a {
+   text-decoration: underline;
+  }
+}
+//
+.float_left {float: left;}
+.float_right {float: right;}

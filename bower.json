@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "fullpage.js": "^2.8.2",
-    "font-awesome": "fontawesome#^4.6.3"
+    "font-awesome": "fontawesome#^4.6.3",
+    "bootstrap3-wysihtml5-bower": "^0.3.3"
   }
 }

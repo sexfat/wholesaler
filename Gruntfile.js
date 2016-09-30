@@ -3,19 +3,19 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
 
-        // //jade
-        // jade: {
-        //     compile: {
-        //         options: {
-        //             pretty: true,
-        //             expand: true,
-        //         },
-        //         files: {
-        //             "jade_template.html": ["assets/app/main.jade"]
-        //         },
-        //
-        //     }
-        // },
+        //jade
+        jade: {
+            compile: {
+                options: {
+                    pretty: true,
+                    expand: true,
+                },
+                files: {
+                    "jade_template.html": ["assets/app/main.jade"]
+                },
+
+            }
+        },
 
 
         //watch
@@ -34,11 +34,11 @@ module.exports = function(grunt) {
             js: {
                 files: ['assets/js/*.js'],
                 tasks: ['browserify']
+            },
+            jade: {
+              files: ['assets/app/*.jade' , 'assets/app/**/*.jade' ],
+              tasks: ['jade']
             }
-            // jade: {
-            //   files: ['assets/app/*.jade' , 'assets/app/**/*.jade' ],
-            //   tasks: ['jade']
-            // }
         },
         //sass
         sass: {
@@ -158,23 +158,23 @@ module.exports = function(grunt) {
                     dest: 'assets/simple-line-icons/'
                 }, {
                     expand: true,
-                    cwd: 'assets/img/',
+                    cwd: 'assets/images/',
                     src: ['*'],
-                    dest: 'assets/img/'
+                    dest: 'assets/images/'
                 }, {
                     expand: true,
                     cwd: 'assets/css/',
-                    src: ['*.css'],
+                    src: ['main.css'],
                     dest: 'assets/css/'
                 }, {
                     expand: true,
                     cwd: './',
-                    src: ['*.html'],
+                    src: ['index_personal_info.html'],
                     dest: '/'
                 }, {
                     expand: true,
                     cwd: 'assets/js/',
-                    src: ['*.js'],
+                    src: ['output.js' ,'jquery.slimscroll.min.js','app.min.js','layout.min.js' ],
                     dest: 'assets/js/'
                 }]
             }
@@ -238,7 +238,7 @@ module.exports = function(grunt) {
     // grunt.registerTask('default', ['browserSync','browserify', 'watch', 'jade', 'jshint']);
     grunt.registerTask('default', ['browserSync', 'browserify', 'watch']);
     // grunt.registerTask('mini', ['cssmin']);
-    grunt.registerTask('build', ['cssmin', 'compress', 'replace']);
+    grunt.registerTask('build', ['cssmin', 'compress']);
     // grunt.registerTask('copy', ['copy']);
 
 
