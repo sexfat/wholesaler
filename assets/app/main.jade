@@ -1,7 +1,11 @@
-doctype html
+doctype
 html
   include module/header.jade
-    body.page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo page-sidebar-fixed
-    include module/nav.jade        
-    include page/page_content_main.jade    
+    //- body.page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo page-sidebar-fixed
+  include module/nav.jade
+  body 
+    //content
+    include page/page_content_main.jade
     include module/footer.jade
+    //js
+    include module/main_js.jade
