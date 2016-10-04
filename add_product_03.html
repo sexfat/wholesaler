@@ -392,8 +392,10 @@
                             <div class="portlet-body">
                                 <form action="#" class="form-horizontal">
                                     <div class="form-body">
-                                        <div class="caption">
-                                            <span class="caption-subject font-red sbold uppercase">Unit</span>
+                                        <!-- title -->
+                                        <div class="title_group">
+                                            <h4>Unit</h4>
+                                            <hr>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3">Selling Unit<span class="required"> * </span></label>
@@ -444,57 +446,106 @@
                                             <input type="text" name="name" class="form-control input-inline input-small" placeholder="units">lot(s)
                                         </div>
                                     </div>
-                                    <hr>
-                                    <div class="caption">
-                                        <span class="caption-subject font-red sbold uppercase">Price</span>
+                                    <div class="title_group">
+                                        <h4>Price</h4>
+                                        <hr>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-md-3">Suggested Retail Price <span class="required"> * </span></label>
                                         <div class="col-md-8">
-                                            1 product for  <input type="text" name="name" class="form-control input-inline input-small" placeholder="units"> USD
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Wholesaler Price <span class="required"> * </span></label>
-                                        <div class="col-md-8">
-                                            <span class="help-block">Characters Remaining: 1996</span>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="caption">
-                                        <span class="caption-subject font-red sbold uppercase">Unit</span>
-                                    </div>
-                                <!--  start -->
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Wholesaler Price <span class="required"> * </span></label>
-                                        <div class="col-md-8">
-                                          <ul class="list-dot">
-                                            <li class="ls">999 or more lots, <input type="text" name="name" class="form-control input-inline input-small" placeholder="units"> USD for each</li>
-                                            <li class="ls"><input type="text" name="name" class="form-control input-inline input-small" placeholder="units"> or more lots <input type="text" name="name" class="form-control input-inline input-small" placeholder="units">USD for each <span class="delete inline-block">delete</span> </li>
-                                          </ul>
-                                        </div>
-                                    </div>
-                                <!--  start -->
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Wholesaler Price <span class="required"> * </span></label>
-                                        <div class="col-md-8">
-                                            <span class="help-block">Characters Remaining: 1996</span>
+                                            1 product for <input type="text" name="name" class="form-control input-inline input-small" placeholder="units"> USD
                                         </div>
                                     </div>
                                     <!--  start -->
                                     <div class="form-group">
-                                        <label class="control-label col-md-3">Product Details</label>
+                                        <label class="control-label col-md-3">Wholesaler Price <span class="required"> * </span></label>
                                         <div class="col-md-8">
-                                            <div class="portlet-body">
-                                                <!--summernote editor plugins-->
-                                                <div class="summernote">press enter word...</div>
-                                            </div>
-                                            <span class="help-block">this field allows you to introduce your business. Use this section to describe how your business started, how long you've been around, what your company philosophy is, whether you have a physical store, and/or how many employees you have. Feel free to elaborate on these topics and others.</span>
-                                            <span class="">Te data in this page is shared with Asian Products. Edit here and you will change product information on both sides.</span>
+                                            <ul class="list-dot">
+                                                <li class="ls">999 or more lots, <input type="text" name="name" class="form-control input-inline input-small" placeholder="units"> USD for each</li>
+                                                <li class="ls"><input type="text" name="name" class="form-control input-inline input-small" placeholder="units"> or more lots <input type="text" name="name" class="form-control input-inline input-small" placeholder="units">USD
+                                                    for each <span class="delete inline-block">delete</span> </li>
+                                            </ul>
                                         </div>
-
                                     </div>
-                                    <!-- end 查看代碼-->
+                                    <!-- title -->
+                                    <div class="title_group">
+                                        <h4>Data</h4>
+                                        <hr>
+                                    </div>
+                                    <!--  start -->
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">Period<span class="required"> * </span></label>
+                                        <div class="col-md-8">
+                                            <div class="input-group">
+                                                <div class="radio-list">
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="optionsRadios" value="option1" checked> Unlimited
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                         <input type="radio" name="optionsRadios" value="option2" >
+                                                  </label>
+                                                    <label class="radio-inline input-margin-left">
+                                                    <input type="text" name="name" class="form-control input-inline input-xsmall" placeholder="yy">
+                                                    <select class="form-control input-inline input-small" name="select">
+                                                      <option value="tai" disabled="" selected="">-- Please Select --</option>
+                                                      <option value="1000">A brand</option>
+                                                      <option value="1000">B brand</option>
+                                                    </select>
+                                                    GMT+8 ~
+                                                  </label>
+                                                    <label class="radio-inline input-margin-left">
+                                                    <input type="text" name="name" class="form-control input-inline input-xsmall" placeholder="yy">
+                                                    <select class="form-control input-inline input-small" name="select">
+                                                      <option value="tai" disabled="" selected="">-- Please Select --</option>
+                                                      <option value="1000">A brand</option>
+                                                      <option value="1000">B brand</option>
+                                                    </select>
+                                                    GMT+8
+                                                  </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- hr -->
+                                    <div class="title_group">
+                                        <h4>Shipping Weight</h4>
+                                        <hr>
+                                    </div>
+                                    <!--  start -->
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">Shipping Weight<span class="required"> * </span></label>
+                                        <div class="col-md-8">
+                                            <input type="text" name="name" class="form-control input-inline input-small" placeholder="units">kg per lot
+
+                                            <span class="help-block">Please calculate actual weight and volume weight, and pick heavier one here, the weight will be used to calculate shipping rates.</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- hr -->
+                                    <div class="title_group">
+                                        <h4>Package Weight and Size</h4>
+                                        <hr>
+                                    </div>
+                                    <!--  start -->
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">Shipping Weight<span class="required"> * </span></label>
+                                        <div class="col-md-8">
+                                            <input type="text" name="name" class="form-control input-inline input-small" placeholder="units">kg per lot
+                                            <!-- <span class="help-block">Please calculate actual weight and volume weight, and pick heavier one here, the weight will be used to calculate shipping rates.</span> -->
+                                        </div>
+                                    </div>
+                                    <!--  start -->
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">Shipping Weight</label>
+                                        <div class="col-md-8">
+                                            <input type="text" name="name" class="form-control input-inline input-xsmall" placeholder="units">cm<span class="required"> * </span>
+                                            <input type="text" name="name" class="form-control input-inline input-xsmall" placeholder="units">cm<span class="required"> * </span>
+                                            <input type="text" name="name" class="form-control input-inline input-xsmall" placeholder="units">cm per lot
+
+                                            <!-- <span class="help-block">Please calculate actual weight and volume weight, and pick heavier one here, the weight will be used to calculate shipping rates.</span> -->
+                                        </div>
+                                    </div>
+
 
 
                             </div>

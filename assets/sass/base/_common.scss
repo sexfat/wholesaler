@@ -35,22 +35,67 @@ sup {
 .btn-fullscreen {
     display: none;
 }
-
 //from
+
 .form-control {
-  option:first {
-      color: #999;
-  }
+    option:first {
+        color: #999;
+    }
 }
+
 .inlineblock {
-display: inline-block;
+    display: inline-block;
 }
+
 .input_link {
-margin-left: 20px;
-  a {
-   text-decoration: underline;
-  }
+    margin-left: 20px;
+
+    a {
+        text-decoration: underline;
+    }
 }
 //
-.float_left {float: left;}
-.float_right {float: right;}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.input-margin-left {
+    margin-left: -15px !important;
+}
+
+.single_radio {
+    padding-top: 0;
+
+    .radio {
+        padding-top: 0;
+    }
+}
+
+.form-inside {
+    margin-top: 15px;
+}
+
+.single_input {
+    margin-top: -7px;
+}
+
+.valign {
+    vertical-align: inherit;
+}
+
+.input-font-right {
+    margin-left: 0;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.input-font-left {
+    margin-left: 5px;
+    margin-right: 0;
+    display: inline-block;
+}

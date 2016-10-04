@@ -373,38 +373,132 @@
                         <div class="portlet light portlet-fit portlet-datatable bordered">
                             <div class="preloaders">
                                 <ul class="col-md-12">
-                                    <li class="list"><span class="number active"> 1 </span><span class="desc"> Step 1 Basic Information</span></li>
+                                    <li class="list"><span class="number"> 1 </span><span class="desc"> Step 1 Basic Information</span></li>
                                     <li class="list"><span class="number"> 2 </span><span class="desc"> Step 2 Product Description</span></li>
                                     <li class="list"><span class="number"> 3 </span><span class="desc"> Step 3 Unit and Price</span></li>
-                                    <li class="list"><span class="number"> 4 </span><span class="desc"> Step 4 Variants and QTY</span></li>
+                                    <li class="list"><span class="number active"> 4 </span><span class="desc"> Step 4 Variants and QTY</span></li>
                                 </ul>
                             </div>
                             <div id="progress" class="progress">
-                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 49%">
+                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 79%">
                                     <span class="sr-only">45% Complete</span>
                                 </div>
                             </div>
 
-                           <!-- progress end -->
+                            <!-- progress end -->
+
+
+                            <div class="portlet-body">
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-body">
+                                        <div class="title_group">
+                                            <h4>Variants and QTY</h4>
+                                            <hr>
+                                        </div>
+                                        <!--  start -->
+
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Variants<span class="required"> * </span></label>
+                                            <div class="col-md-8">
+                                                <div class="input-group">
+                                                    <div class="radio-list">
+                                                        <label class="radio-inline">
+                                                        <input type="radio" name="optionsRadios" value="option1" checked>Single Variation</label>
+                                                    </div>
+                                                    <div class="form-inside">
+                                                        Available QTY<span class="required"> * </span><input type="text" name="name" class="form-control input-inline input-small single_input" placeholder="units">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3"></label>
+                                            <div class="col-md-8">
+                                                <div class="radio-list">
+                                                    <label class="radio-inline">
+                                                    <input type="radio" name="optionsRadios" value="option1" checked>Different variation</label>
+                                                </div>
+                                                <ul class="checkbox_margin_top">
+                                                    <li><label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                                    <input name="01" type="checkbox" class="checkboxes" value="1"></label>Spec <input type="text" name="name" class="form-control input-inline input-xsmall" placeholder="unit">
+                                                    </li>
+                                                    <li><label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                                      <input name="01" type="checkbox" class="checkboxes" value="1"></label>Color <input type="text" name="name" class="form-control input-inline input-xsmall" placeholder="unit">
+                                                    </li>
+                                                    <li><label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                                        <input name="01" type="checkbox" class="checkboxes" value="1"></label>Size <input type="text" name="name" class="form-control input-inline input-xsmall" placeholder="unit">
+                                                    </li>
+                                                </ul>
+
+                                                <div class="table-scrollable">
+                                                    <table class="table table-striped table-bordered table-advance table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="2%">Use</th>
+                                                                <th width="8%">Spec</th>
+                                                                <th width="18%">Color</th>
+                                                                <th>Size</th>
+                                                                <th>SKU Number<span class="required"> * </span></th>
+                                                                <th>Available QTY<span class="required"> * </span></th>
+                                                                <!-- <th width="10%"></th> -->
+                                                                <!-- <th width="8%"></th> -->
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                                                      <input name="01" type="checkbox" class="checkboxes" value="1"></label>
+                                                                </td>
+                                                                <td>
+                                                                    11
+                                                                </td>
+                                                                <td>
+                                                                    <a href="javascript:;" class="fancybox-button inlineblock" data-rel="fancybox-button">
+                                                                        <img class="img-responsive" src="../assets/pages/media/works/img1.jpg" alt=""></a><span class="inlineblock valign">Red</span></td>
+                                                                <td>S</td>
+                                                                <td><input type="text" name="name" class="form-control input-inline input-small" placeholder="unit"></td>
+                                                                <td><input type="text" name="name" class="form-control input-inline input-xsmall" placeholder="unit"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-actions">
+                                        <div class="row">
+                                            <div class="col-md-offset-5 col-md-9">
+                                                <button type="cancel" class="btn default ">back</button>
+                                                <button type="save" class="btn default btn_submit">save</button>
+                                                <button type="submit" class="btn red btn_submit">Request Review</button>
+                                                <!-- <button type="button" class="btn default">Cancel</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- end -->
 
 
 
-
-
-
+                        </div>
+                        <!-- content end-->
                     </div>
-                    <!-- content end-->
+
+                    <!-- END paGE BaSE CONTENT -->
                 </div>
-
-                <!-- END paGE BaSE CONTENT -->
+                <!-- end content -->
             </div>
-            <!-- end content -->
+
+
+
         </div>
-
-
-
-    </div>
-    <!-- end content -->
+        <!-- end content -->
 
 
 

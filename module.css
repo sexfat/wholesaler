@@ -1,0 +1,19 @@
+/*input大小*/
+.input-xsmall {
+	width: 80px !important;
+}
+.input-small {
+	width: 145px !important;
+}
+.input-medium {
+	width: 240px !important;
+}
+.input-large {
+	width: 320px !important;
+}
+.input-xlarge {
+	width: 420px !important;
+}
+
+/*寄送btn大小*/
+.red .btn_submit
