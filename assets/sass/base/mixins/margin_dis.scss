@@ -1,0 +1,15 @@
+// margin 距離function
+//==============================
+// 範例  @include margin(right,100 ,$display:inline-block);
+//      @include margin(right,100 ,$display:inherit);
+//      @include margin(right,100);
+//==============================
+//
+@mixin margin($direction,$disl,$display:null) {
+     @for $i from 1 through $disl{
+        .margin#{$direction}-#{$i} {
+            margin-#{$direction}: 1px*$i;
+            display: $display;
+        }
+    }
+}

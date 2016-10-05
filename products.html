@@ -397,32 +397,37 @@
                                                 <div class="pull-right search input-icon right"><i class="icon-magnifier"></i>
                                                     <input class="form-control input-inline " type="text" placeholder="Search ....">
                                                 </div>
-                                                <!---->
-                                                <span class="pull-left">Shows:</span>
+
                                                 <div class="pull-left filter_btn">
-                                                    <!-- <div class="radio-list">
-
-                                                        <div class="radio"><label><input type="radio" name="radio1" checked class="icheck">Draft</div>
-
-                                                        <div class="radio"><label><input type="radio" name="radio1" checked class="icheck">Review</div>
-
-                                                        <div class="radio"><label><input type="radio" name="radio1" checked class="icheck">Online</div>
-
-                                                        <div class="radio"><label><input type="radio" name="radio1" checked class="icheck">Offline</div>
-                                                    </div> -->
-                                                    <div class="input-group">
-                                                        <div class="radio-list">
-                                                            <label class="radio-inline">
-                                                               <div class="radio"><span class="checked"><input type="radio" name="optionsRadios" value="option1" checked=""></span></div> Draft </label>
-                                                            <label class="radio-inline">
-                                                              <div class="radio"><span class=""><input type="radio" name="optionsRadios" value="option2"></span></div> Review </label>
-                                                            <label class="radio-inline">
-                                                              <div class="radio"><span class=""><input type="radio" name="optionsRadios" value="option3"></span></div> Online </label>
-                                                            <label class="radio-inline">
-                                                              <div class="radio"><span class=""><input type="radio" name="optionsRadios" value="option3"></span></div> Online </label>
+                                                </div>
+                                                <!-- start -->
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-1">Shows：</label>
+                                                    <div class="col-md-9">
+                                                        <div class="input-group">
+                                                            <div class="radio-list">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="optionsRadios" value="option1" checked> Draft
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="optionsRadios" value="option2" > Review
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                      <input type="radio" name="optionsRadios" value="option2" > Online
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                      <input type="radio" name="optionsRadios" value="option2" > offline
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                       <input type="radio" name="optionsRadios" value="option2" > Rejected
+                                                                </label>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
+
+                                                <!-- start -->
                                                 <div class="function_btn">
                                                     <select name="product_status" class="form-control form-filter input-sm">
                                                   <option value="online"><i class="fa fa-glass icon-success"></i>Online</option>
@@ -473,10 +478,8 @@
                                                         <th width="8%">Status</th>
                                                         <th width="8%">Image</th>
                                                         <th width="7%" class="sorting" aria-controls="ajax" rowspan="1">Item No.</th>
-                                                        <!-- <th width="22%" class="sorting" tabindex="0" aria-controls="datatable_ajax" rowspan="1" colspan="1" > Product Name / SKU / Category </th> -->
-                                                        <!-- <th width="3%"  tabindex="0" aria-controls="datatable_ajax"  colspan="1" aria-label=" Price : activate to sort column ascending"> Inventory </th> -->
-                                                        <th width="22%" class="sorting" tabindex="0" aria-controls="datatable_ajax" rowspan="1" colspan="1" aria-label=" Amount : activate to sort column ascending">Product Name</th>
-                                                        <th width="4%" class="sorting" tabindex="0" aria-controls="datatable_ajax" rowspan="1" colspan="1" aria-label=" Status : activate to sort column ascending">Brand</th>
+                                                        <th width="22%" class="sorting" tabindex="0" rowspan="1" colspan="1">Product Name</th>
+                                                        <th width="4%" class="sorting" tabindex="0" rowspan="1" colspan="1">Brand</th>
                                                         <th width="4%">Total QTY</th>
                                                         <th width="9%"> Actions </th>
                                                     </tr>

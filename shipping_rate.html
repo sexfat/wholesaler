@@ -365,7 +365,6 @@
                 <!-- end -->
                 <div class="row">
                     <div class="col-md-12">
-
                         <div class="portlet light portlet-fit portlet-form bordered" id="form_wizard_1">
                             <!--======= content放內容處 ======-->
                             <div class="portlet-title">
@@ -380,53 +379,160 @@
 
                                 </div>
                             </div>
-                            <div class="portlet-body width_all">
+                            <div class="portlet width_all">
                                 <form action="#" id="business_info" class="form-horizontal">
-                                    <!--table start-->
-                                    <div class="table-scrollable">
-                                        <table class="table table-striped table-bordered table-advance table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th width="6%">Shipping Area Name</th>
-                                                    <th width="30%">Countries</th>
-                                                    <th width="1%">Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        US
-                                                    </td>
-                                                    <td>
-                                                        US
-                                                    </td>
-                                                    <td>
-                                                        <select name="product_status" class="form-control form-filter input-xsmall">
-                                                             <option value="published">Edit</option>
-                                                             <option value="deleted">Deleted</option>
-                                                         </select>
-                                                    </td>
-                                                </tr>
-                                                <!--list-->
-                                                <tr>
-                                                    <td>
-                                                        Asian
-                                                    </td>
-                                                    <td>
-                                                        Taiwan, China, Japan and other 15 countries.
-                                                    </td>
-                                                    <td>
-                                                        <select name="product_status" class="form-control form-filter input-xsmall">
-                                                             <option value="published">Edit</option>
-                                                             <option value="deleted">Deleted</option>
-                                                         </select>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!--table end-->
+                                    <div class="row">
+                                        <!-- start -->
+                                        <div class="col-md-12">
+                                            <div class="portlet light bordered">
+                                                <h4><b>UPS ( Standard Listed Rates )</b></h4>
+                                                <hr>
 
+                                                <div class="form-group">
+                                                    <label class="col-md-10 control-label1">The system will automatically calculate shipping rate. You can see the shipping rate.<span class="input_link margin-left5"><a href="">here</a></span></label>
+                                                    <div class="col-md-2">
+                                                        <input type="checkbox" class="make-switch" checked data-on="success" data-on-color="danger" data-off-color="default" data-size="small">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--start-->
+                                        <div class="col-md-12">
+                                            <div class="portlet light bordered">
+                                                <div class="portlet-title">
+                                                    <div class="caption">
+                                                        <i class="icon-cursor font-blue"></i>
+                                                        <span class="caption-subject font-blue bold uppercase">新竹貨運</span>
+                                                        <span class="caption-helper">[ TW ]</span>
+                                                    </div>
+
+                                                    <div class="actions">
+                                                        <a href="javascript:;" class="btn btn-sm red btn-outline filter-cancel">
+                                                            <i class="fa fa-pencil"></i> Edit </a>
+                                                        <a href="javascript:;" class="btn btn-sm red btn-outline filter-cancel">
+                                                            <i class="fa fa-trash"></i> delete </a>
+                                                    </div>
+                                                </div>
+                                                <!--list-->
+                                                <ul class="line_space">
+                                                    <li><label class="list">Basis :</label> Weight / Volume weight </li>
+                                                    <li><label class="list">Range :</label>Basic 10 kg, additional 1 kg valuation</li>
+                                                </ul>
+                                                <div class="portlet">
+                                                    <div class="table-scrollable">
+                                                        <table class="table table-striped table-hover">
+                                                            <thead>
+                                                                <tr>
+
+                                                                    <th>Area</th>
+                                                                    <th>Free Shipping</th>
+                                                                    <th>Basic Rate</th>
+                                                                    <th>Additional Rate</th>
+                                                                    <th> Estimated Delivery Time (Working Days)</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+
+                                                                    <td><a href="javascript:;">Local</a> </td>
+                                                                    <td>Yes</td>
+                                                                    <td>0 USD</td>
+                                                                    <td>0 USD</td>
+                                                                    <td> 3 - 5 Days</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> <a href="javascript:;">Asian</a></td>
+                                                                    <td>No</td>
+                                                                    <td> $15.00 </td>
+                                                                    <td> $10.00</td>
+                                                                    <td> 5 - 7 Days</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><a href="javascript:;">Asia</a></td>
+                                                                    <td>yes</td>
+                                                                    <td>$0.00 </td>
+                                                                    <td> $0.00 </td>
+                                                                    <td> 7 - 10 Days</td>
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <!--end portlet-body-->
+                                            </div>
+                                        </div>
+                                        <!-- start -->
+                                        <div class="col-md-12">
+                                            <div class="portlet light bordered">
+                                                <div class="portlet-title">
+                                                    <div class="caption">
+                                                        <i class="icon-cursor font-blue"></i>
+                                                        <span class="caption-subject font-blue bold uppercase">DHL</span>
+                                                        <span class="caption-helper">[ US ]</span>
+                                                    </div>
+
+                                                    <div class="actions">
+                                                        <a href="javascript:;" class="btn btn-sm red btn-outline filter-cancel">
+                                                            <i class="fa fa-pencil"></i> Edit </a>
+                                                        <a href="javascript:;" class="btn btn-sm red btn-outline filter-cancel">
+                                                            <i class="fa fa-trash"></i> delete </a>
+                                                    </div>
+                                                </div>
+                                                <!--list-->
+                                                <ul class="line_space">
+                                                    <li><label class="list">Basis :</label> Weight / Volume weight </li>
+                                                    <li><label class="list">Range :</label>Basic 10 kg, additional 1 kg valuation</li>
+                                                </ul>
+                                                <div class="portlet">
+                                                    <div class="table-scrollable">
+                                                        <table class="table table-striped table-hover">
+                                                            <thead>
+                                                                <tr>
+
+                                                                    <th>Area</th>
+                                                                    <th>Free Shipping</th>
+                                                                    <th>Basic Rate</th>
+                                                                    <th>Additional Rate</th>
+                                                                    <th> Estimated Delivery Time (Working Days)</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+
+                                                                    <td><a href="javascript:;">Local</a> </td>
+                                                                    <td>Yes</td>
+                                                                    <td>0 USD</td>
+                                                                    <td>0 USD</td>
+                                                                    <td> 3 - 5 Days</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> <a href="javascript:;">Asian</a></td>
+                                                                    <td>No</td>
+                                                                    <td> $15.00 </td>
+                                                                    <td> $10.00</td>
+                                                                    <td> 5 - 7 Days</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><a href="javascript:;">Asia</a></td>
+                                                                    <td>yes</td>
+                                                                    <td>$0.00 </td>
+                                                                    <td> $0.00 </td>
+                                                                    <td> 7 - 10 Days</td>
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <!--end -->
+                                    </div>
                                 </form>
                             </div>
                             <!--======= end content =======-->

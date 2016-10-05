@@ -1,8 +1,13 @@
+@include margin(left,50,inline-block);
+@include margin(right,50,inline-block);
+@include margin(top,50,$display:inherit);
+//使用條件  marginright-3 / marginleft-4
+
 //products
 
 .actions {
     margin-left: 15px;
-}
+  }
 
 .function_btn {
     width: 8%;
@@ -65,29 +70,43 @@
             display: inline-block;
             font-size: 16px;
             font-weight: 300;
+        }
 
-         }
-         .active {
-           background-color: #33ddd7;
-           color: #fff;
-         }
+        .active {
+            background-color: #33ddd7;
+            color: #fff;
+        }
     }
 }
+
 #progress {
-  width: 93%;
-  margin-left: 10px;
+    width: 93%;
+    margin-left: 10px;
 }
 
 .form-actions {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .checkbox_margin_top {
-  li {
-margin-top: 10px;
+    li {
+        margin-top: 10px;
+    }
+}
 
-
-  }
+.line_space {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    .list {
+        margin-right: 15px;
+        margin-top:10px;
+        margin-bottom: 15px;
+    }
+}
+.location {
+a {
+  margin-top: 4px
+}
 
 
 

@@ -99,3 +99,16 @@ sup {
     margin-right: 0;
     display: inline-block;
 }
+
+.width_all {
+    width: 96%;
+    @include margin-auto;
+}
+
+.margin-left5 {
+    margin-left: 5px;
+}
+
+.bootstrap-switch {
+  border: 1px solid rgb(227, 227, 227);
+}

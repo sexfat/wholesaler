@@ -370,62 +370,76 @@
                             <!--======= content放內容處 ======-->
                             <div class="portlet-title">
                                 <div class="caption">
-                                    <span class="caption-subject sbold">Exclude Shipping Locations</span>
+                                    <span class="caption-subject sbold">Available QTY</span>
                                 </div>
                                 <div class="actions">
-                                    <a href="#" class="btn btn-circle btn-info">
-                                        <i class="fa fa-plus"></i>
-                                        <span class="hidden-xs">Add Exclude Shipping Locations</span>
-                                    </a>
+                                    <div class="pull-right search input-icon right"><i class="icon-magnifier"></i>
+                                        <input class="form-control input-inline " type="text" placeholder="Search ....">
+                                    </div>
 
                                 </div>
                             </div>
                             <div class="portlet-body width_all">
                                 <form action="#" id="business_info" class="form-horizontal">
-                                    <!--table start-->
-                                    <div class="table-scrollable">
-                                        <table class="table table-striped table-bordered table-advance table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th width="6%">Shipping Area Name</th>
-                                                    <th width="30%">Countries</th>
-                                                    <th width="1%">Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        US
-                                                    </td>
-                                                    <td>
-                                                        US
-                                                    </td>
-                                                    <td>
-                                                        <select name="product_status" class="form-control form-filter input-xsmall">
-                                                             <option value="published">Edit</option>
-                                                             <option value="deleted">Deleted</option>
-                                                         </select>
-                                                    </td>
-                                                </tr>
-                                                <!--list-->
-                                                <tr>
-                                                    <td>
-                                                        Asian
-                                                    </td>
-                                                    <td>
-                                                        Taiwan, China, Japan and other 15 countries.
-                                                    </td>
-                                                    <td>
-                                                        <select name="product_status" class="form-control form-filter input-xsmall">
-                                                             <option value="published">Edit</option>
-                                                             <option value="deleted">Deleted</option>
-                                                         </select>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <!-- start -->
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1">Shows：</label>
+                                        <div class="col-md-9">
+                                            <div class="input-group">
+                                                <div class="radio-list">
+                                                    <label class="radio-inline">
+                                                      <input type="radio" name="optionsRadios" value="option1" checked> Online
+                                                  </label>
+                                                    <label class="radio-inline">
+                                                         <input type="radio" name="optionsRadios" value="option2" > offline
+                                                  </label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!--table end-->
+                                    <!-- start -->
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div class="table-scrollable">
+                                                <table class="table table-striped table-bordered table-advance table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th width="2%">Status</th>
+                                                            <th width="8%">Image</th>
+                                                            <th width="5%">Item No</th>
+                                                            <th width="30%">Product Name</th>
+                                                            <th width="2%">SKU No.</th>
+                                                            <th width="2%">Spec/Color/Size</th>
+                                                            <th width="4%">QTY</th>
+                                                            <th width="8%">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>online</td>
+                                                            <td>
+                                                                <a href="javascript:;" class="fancybox-button inlineblock" data-rel="fancybox-button"><img class="img-responsive" src="../assets/pages/media/works/img1.jpg" alt=""></a><span class="inlineblock valign"></span></td>
+                                                            <td>P.00001</td>
+                                                            <td>
+                                                                NOBILITY Legendary Exorcise Beast Paperweight
+                                                            </td>
+                                                            <td>132</td>
+                                                            <td>110v / red</td>
+                                                            <td>1000</td>
+                                                            <td>
+                                                                <!-- start -->
+                                                                <!-- start -->
+                                                            </td>
+                                                        </tr>
+                                                        <!--list-->
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
 
                                 </form>
                             </div>
