@@ -5911,6 +5911,25 @@ button.close {
 .navbar.page-header .top-menu .navbar-nav > li.dropdown .dropdown-menu {
   margin-top: -10px; }
 
+#login {
+  width: 400px !important;
+  background-color: #fff;
+  color: #7d7d7d;
+  padding: 25px;
+  border-style: solid;
+  border-width: 0px 7px 7px 7px;
+  border-color: #e2e2e2; }
+  #login #full-width-f {
+    width: 100%;
+    background-color: #3598dc; }
+  #login #full-width-g {
+    width: 100%;
+    background-color: #e8410c;
+    color: #fff; }
+  #login #full-width {
+    width: 100%;
+    color: #fff; }
+
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

@@ -5,10 +5,11 @@
 @import "../base/reset";
 @import "../vender/bootstraps/bootstrap";
 // header layout
-@import "../modules/header";
+
 @import "../vender/components.min";
 @import "../vender/light.min";
 @import "../vender/layout.min";
+
 
 //gigi
 @import "../others/gigimodify";
@@ -30,3 +31,5 @@
 // switch button
 @import "../vender/bootstrap-switch.min";
 @import "../vender/uniform.default";
+@import "../modules/layout";
+@import "../modules/header";
