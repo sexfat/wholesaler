@@ -1,0 +1,26 @@
+//會員登入
+#login {
+    width: 400px !important;
+    background-color: #fff;
+    color: #7d7d7d;
+    padding: 25px;
+    border-style: solid;
+    border-width: 0px 7px 7px 7px;
+    border-color: #e2e2e2;
+    //btn
+    #full-width-f {
+      width: 48%;
+      display: inline-block;
+      background-color: #3b5998;
+    }
+    #full-width-g {
+      width: 48%;
+      display: inline-block;
+      background-color: #e8410c;
+      color: #fff;
+    }
+    #full-width {
+      width: 100%;
+      color: #fff;
+    }
+}

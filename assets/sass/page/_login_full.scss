@@ -1,0 +1,20 @@
+#full-width-all {
+    width: 100%;
+    background-color: #e9eff3;
+    display: block;
+    height: 1000px;
+}
+
+.navbar {
+    &.page-header {
+        background-color: inherit;
+    }
+}
+
+#margin-auto {
+    @include margin-auto;
+    width: 500px;
+}
+#login {
+    border-width: 7px 7px 7px 7px;
+}

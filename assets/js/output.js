@@ -262,6 +262,14 @@ $(document).ready(function() {
 
 });
 
+$(document).ready(function() {
+
+    var contentHeight = $(window).height();
+    $(".contentHeight").css("height", contentHeight/2);
+
+  console.log(contentHeight);
+});
+
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"../../assets/js/bootstrap-fileinput.js":1,"../../assets/js/bootstrap-switch.min.js":2,"../../assets/js/jquery.uniform.min.js":3,"../../assets/libs/bootstrap/dist/js/bootstrap.js":5,"../../assets/libs/summernote/dist/summernote.js":6,"jquery":7}],5:[function(require,module,exports){
 /*!

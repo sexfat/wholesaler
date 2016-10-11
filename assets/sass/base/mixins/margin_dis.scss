@@ -11,5 +11,9 @@
             margin-#{$direction}: 1px*$i;
             display: $display;
         }
+        #margin#{$direction}-#{$i} {
+            margin-#{$direction}: 1px*$i;
+            display: $display;
+        }
     }
 }
