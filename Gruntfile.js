@@ -164,12 +164,12 @@ module.exports = function(grunt) {
                 }, {
                     expand: true,
                     cwd: 'assets/css/',
-                    src: ['main.css'],
+                    src: ['main.css' , 'main.min.css'],
                     dest: 'assets/css/'
                 }, {
                     expand: true,
                     cwd: './',
-                    src: ['Signup.html' ,'Signup2.html'],
+                    src: ['login.html'],
                     dest: '/'
                 }, {
                     expand: true,
@@ -236,7 +236,7 @@ module.exports = function(grunt) {
 
     // define default task
     // grunt.registerTask('default', ['browserSync','browserify', 'watch', 'jade', 'jshint']);
-    grunt.registerTask('default', ['browserSync', 'browserify', 'watch']);
+    grunt.registerTask('default', ['browserSync', 'browserify', 'watch','cssmin']);
     // grunt.registerTask('mini', ['cssmin']);
     grunt.registerTask('build', ['cssmin', 'compress']);
     // grunt.registerTask('copy', ['copy']);

@@ -39781,6 +39781,12 @@ sup {
 .height-all {
   height: 800px; }
 
+.title_group {
+  margin-top: 60px; }
+  .title_group h4 {
+    color: #505050;
+    margin-left: 25px; }
+
 .label-danger {
   margin-right: 10px;
   float: left; }
@@ -41423,7 +41429,9 @@ input.uniform-input:focus {
 
 @media (min-width: 992px) {
   #width_all {
-    margin-left: 0; } }
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; } }
 .nav-panel-content {
   background: #3598dc; }
 
@@ -43099,15 +43107,12 @@ input.uniform-input:focus {
   width: 500px; }
 
 #login {
-  border-width: 7px 7px 7px 7px; }
-
-#login {
   width: 400px !important;
   background-color: #fff;
   color: #7d7d7d;
   padding: 25px;
   border-style: solid;
-  border-width: 0px 7px 7px 7px;
+  border-width: 7px 7px 7px 7px;
   border-color: #e2e2e2; }
   #login #full-width-f {
     width: 48%;
@@ -43121,3 +43126,15 @@ input.uniform-input:focus {
   #login #full-width {
     width: 100%;
     color: #fff; }
+
+#login_full {
+  width: 80%;
+  background-color: #fff;
+  color: #7d7d7d;
+  padding: 25px;
+  border-color: #e2e2e2; }
+
+.width_80 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }

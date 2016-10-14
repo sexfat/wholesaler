@@ -110,32 +110,40 @@ sup {
 }
 
 .bootstrap-switch {
-  border: 1px solid rgb(227, 227, 227);
+    border: 1px solid rgb(227, 227, 227);
 }
 
 .underline {
-text-decoration: underline;
-margin-left: 3px;
+    text-decoration: underline;
+    margin-left: 3px;
 }
-
 //colour
 
 .word-black {
-color: #000;
+    color: #000;
 }
 
 .background-3598dc {
-background-color: #3598dc;
-color: #fff;
-  & a {
+    background-color: #3598dc;
     color: #fff;
-  }
-  & a:hover {
-   color: #fff;
 
-  }
+    & a {
+        color: #fff;
+    }
 
+    & a:hover {
+        color: #fff;
+    }
 }
+
 .height-all {
-height: 800px;
+    height: 800px;
+}
+//大標題的距離
+.title_group {
+    margin-top: 60px;
+    h4 {
+        color: #505050;
+        margin-left: 25px;
+    }
 }
