@@ -41,12 +41,6 @@
                             <span class="nav_txt active">EZorder Wholesaler</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class=" icon-globe"></i>
-                            <span class="nav_txt">Web Builder</span>
-                        </a>
-                    </li>
                 </ul>
             </div>
             <!-- END LOGO -->
@@ -73,13 +67,9 @@
                             </a>
                         </li>
                         <li class="separator hide"></li>
-                        <!-- END TODO DROpDOWN -->
-                        <!-- begin USER LOGiN DROpDOWN -->
-                        <!-- DOC: apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-                        <li class="dropdown dropdown-user dropdown-dark">
+                        <!-- <li class="dropdown dropdown-user dropdown-dark">
                             <a class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" data-close-others="true" data-hover="dropdown">
                                 <span class="username username-hide-on-mobile">Wilson</span>
-                                <!-- 下拉式子選單DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
                                 <img class="img-circle" alt="" src="assets/images/avatar9.jpg">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-default">
@@ -102,7 +92,37 @@
                                         <i class="icon-key"></i> Log Out </a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
+                        <!-- login -->
+                        <div class="dropdown-menu" id="login">
+                            <h4>Login to Your Account Account</h4>
+                            <span class="help-block">* You can also use Asian Products's account to login.</span>
+                            <hr>
+                            <span class="control-label">Account<span class="required"> * </span></span>
+                            <input type="text" name="name" class="form-control" placeholder="name">
+                            <span class="title margintop-20">Password<span class="required"> * </span></span>
+                            <input type="text" name="name" class="form-control " placeholder="">
+
+                            <button type="button" id="full-width" class="btn red mt-ladda-btn ladda-button margintop-30" data-style="expand-down">
+                                    <span class="ladda-label"><i class="fa fa-sign-in" aria-hidden="true"></i> Login </span></button>
+
+                            <div class="margintop-5"><a class="underline" href="#">Forgot password</a></div>
+
+
+
+
+                            <span class="col-md-5"><hr></span> <span class="col-md-2 margintop-10">or</span>
+                            <span class="col-md-5"><hr></span>
+
+                            <button type="button" id="full-width-f" class="btn btn-info mt-ladda-btn ladda-button" data-style="expand-down">
+                                <span class="ladda-label"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span></button>
+
+                            <button type="button" id="full-width-g" class="btn mt-ladda-btn ladda-button " data-style="expand-down">
+                                    <span class="ladda-label"><i class="fa fa-google-plus" aria-hidden="true"></i> Google</span></button>
+                            <hr> New User to EZorder ?
+                            <a class="underline" href="#">Signup</a>
+                        </div>
+                        <!-- login end -->
                         <!-- END USER LOGiN DROpDOWN -->
                     </ul>
                 </div>
@@ -199,121 +219,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a class="nav-link nav-toggle" href="javascript:;">
-                            <i class="fa fa-truck"></i>
-                            <span class="title">Shipping Rate</span>
-                            <span class="arrow "></span>
-                        </a>
-                        <ul class="sub-menu">
-                            <li class="nav-item ">
-                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/shipping_area.html">
-                                    <i class="fa fa-angle-right"></i>Shipping area
-                                </a>
-                            </li>
-                            <!--li class="nav-item "><a href="add_shipping_area.html" class="nav-link "><i class="fa fa-angle-right"></i>add Shipping area</a></li-->
-                            <li class="nav-item">
-                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/shipping_method.html">
-                                    <i class="fa fa-angle-right"></i>Shipping Method
-                                </a>
-                            </li>
-                            <!--li class="nav-item"><a href="add_shipping_method.html" class="nav-link "><i class="fa fa-angle-right"></i>add Shipping Method</a></li><li class="nav-item"><a href="exclude_shipping_locations.html" class="nav-link "><i class="fa fa-angle-right"></i> Exclude Shipping Locations</a></li-->
-                        </ul>
-                    </li>
-                    <!-- end Setting -->
-                    <li class="nav-item">
-                        <a class="nav-link nav-toggle" href="javascript:;">
-                            <i class="icon-layers"></i>
-                            <span class="title">products</span>
-                            <!--Manage products-->
-                            <span class="selected"></span>
-                            <span class="arrow"></span>
-                        </a>
-                        <ul class="sub-menu">
-                            <li class="nav-item  ">
-                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/products.html">
-                                    <i class="fa fa-angle-right"></i>products
-                                </a>
-                                <!--all products-->
-                            </li>
-                            <!--li><a href="add_new_product_single.html"><i class="fa fa-angle-right"></i>add New product-single</a></li><li class="nav-item"><a href="add_new_product_multiple.html"><i class="fa fa-angle-right"></i>add New product-Multiple</a>
-																												<!--Multiple File Upload
-						</li -->
-                        </ul>
-                    </li>
-                    <!-- Orders-->
-                    <li>
-                        <a href="javascript:;">
-                            <i class="icon-basket"></i>
-                            <span class="title">Orders</span>
-                            <span class="arrow "></span>
-                        </a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/manage_orders.html">
-                                    <i class="fa fa-angle-right"></i> Orders
-                                    <!--span class="badge badge-danger">3</span-->
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--account-->
-                    <li>
-                        <a href="javascript:;">
-                            <i class="icon-user-follow"></i>
-                            <span class="title">account</span>
-                            <span class="arrow "></span>
-                        </a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/monthly_report.html">
-                                    <i class="fa fa-angle-right"></i>Monthly Report
-                                </a>
-                            </li>
-                            <li>
-                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/withdraw_money.html">
-                                    <i class="fa fa-angle-right"></i>Withdraw Money
-                                </a>
-                            </li>
-                            <li>
-                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/refund.html">
-                                    <i class="fa fa-angle-right"></i>Refund
-                                </a>
-                            </li>
-                            <li>
-                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/authentication.html">
-                                    <i class="fa fa-angle-right"></i> paypal account authentication
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--after Service-->
-                    <li>
-                        <a href="javascript:;">
-                            <i class=" fa fa-smile-o"></i>
-                            <span class="title">after Service</span>
-                            <span class="arrow"></span>
-                        </a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/qa_center.html">
-                                    <i class="fa fa-angle-right"></i>Qa Center
-                                </a>
-                            </li>
-                            <li>
-                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/feedback_center.html">
-                                    <i class="fa fa-angle-right"></i>Feedback Center
-                                    <!--span class="badge badge-info"> 2 </span-->
-                                </a>
-                            </li>
-                            <li>
-                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/dispute_center.html">
-                                    <i class="fa fa-angle-right"></i>Dispute Center
-                                    <!--span class="badge badge-success">1</span-->
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+
+
+
+
                     <!--Report-->
                 </ul>
                 <!-- END SiDEBaR MENU -->
@@ -330,7 +239,7 @@
                 <div class="page-head">
                     <!-- begin page title -->
                     <div class="page-title">
-                        <h1>Personal Info</h1>
+                        <h1>Menber Center</h1>
                     </div>
                     <!-- END page title -->
                     <!-- begin page toolbar -->
@@ -368,12 +277,6 @@
 
                         <div class="portlet light portlet-fit portlet-form bordered" id="form_wizard_1">
                             <!--======= content放內容處 ======-->
-                            <!-- <div class="portlet-title">
-                                <div class="caption">
-                                    <span class="caption-subject sbold">Contact Information</span>
-                                </div>
-                            </div> -->
-                            <!-- steps start -->
                             <div class="mt-element-step">
                                 <div class="row step-thin">
                                     <div class="col-md-6 bg-grey mt-step-col active">

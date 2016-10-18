@@ -67,13 +67,9 @@
                             </a>
                         </li>
                         <li class="separator hide"></li>
-                        <!-- END TODO DROpDOWN -->
-                        <!-- begin USER LOGiN DROpDOWN -->
-                        <!-- DOC: apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-                        <li class="dropdown dropdown-user dropdown-dark">
+                        <!-- <li class="dropdown dropdown-user dropdown-dark">
                             <a class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" data-close-others="true" data-hover="dropdown">
                                 <span class="username username-hide-on-mobile">Wilson</span>
-                                <!-- 下拉式子選單DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
                                 <img class="img-circle" alt="" src="assets/images/avatar9.jpg">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-default">
@@ -96,7 +92,37 @@
                                         <i class="icon-key"></i> Log Out </a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
+                        <!-- login -->
+                        <div class="dropdown-menu" id="login">
+                            <h4>Login to Your Account Account</h4>
+                            <span class="help-block">* You can also use Asian Products's account to login.</span>
+                            <hr>
+                            <span class="control-label">Account<span class="required"> * </span></span>
+                            <input type="text" name="name" class="form-control" placeholder="name">
+                            <span class="title margintop-20">Password<span class="required"> * </span></span>
+                            <input type="text" name="name" class="form-control " placeholder="">
+
+                            <button type="button" id="full-width" class="btn red mt-ladda-btn ladda-button margintop-30" data-style="expand-down">
+                                    <span class="ladda-label"><i class="fa fa-sign-in" aria-hidden="true"></i> Login </span></button>
+
+                            <div class="margintop-5"><a class="underline" href="#">Forgot password</a></div>
+
+
+
+
+                            <span class="col-md-5"><hr></span> <span class="col-md-2 margintop-10">or</span>
+                            <span class="col-md-5"><hr></span>
+
+                            <button type="button" id="full-width-f" class="btn btn-info mt-ladda-btn ladda-button" data-style="expand-down">
+                                <span class="ladda-label"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span></button>
+
+                            <button type="button" id="full-width-g" class="btn mt-ladda-btn ladda-button " data-style="expand-down">
+                                    <span class="ladda-label"><i class="fa fa-google-plus" aria-hidden="true"></i> Google</span></button>
+                            <hr> New User to EZorder ?
+                            <a class="underline" href="#">Signup</a>
+                        </div>
+                        <!-- login end -->
                         <!-- END USER LOGiN DROpDOWN -->
                     </ul>
                 </div>
@@ -158,36 +184,37 @@
                     <li class="sidebar-leftfuction-wrapper">
                         <!-- END RESpONSiVE QUiCK SEaRCH FORM -->
                     </li>
-
-                    <li class="heading">
-                        <h3 class="uppercase">Menber center</h3>
-                    </li>
                     <li>
                         <a href="javascript:;">
                             <i class="icon-info"></i>
-                            <span class="title">Menber center</span>
+                            <span class="title">Basic Setting</span>
                             <!--Manage products-->
                             <span class="arrow"></span>
                         </a>
                         <ul class="sub-menu">
                             <li class="nav-item">
-                                <a class="nav-link " href="#">
-                                    <i class="fa fa-angle-right"></i>Personal info
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/wholesaler_info.html">
+                                    <i class="fa fa-angle-right"></i>Wholesaler info
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="">
-                                    <i class="fa fa-angle-right"></i>Company Info
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/payment_account.html">
+                                    <i class="fa fa-angle-right"></i>payment account
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="">
-                                    <i class="fa fa-angle-right"></i>Change Account
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/return_info.html">
+                                    <i class="fa fa-angle-right"></i>Return info
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="">
-                                    <i class="fa fa-angle-right"></i>Change Password
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/notification.html">
+                                    <i class="fa fa-angle-right"></i>Notification Options
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/shipping.html">
+                                    <i class="fa fa-angle-right"></i>Shipping info
                                 </a>
                             </li>
                         </ul>
@@ -214,6 +241,16 @@
                     <div class="page-title">
                         <h1>Menber Center</h1>
                     </div>
+                    <!-- END page title -->
+                    <!-- begin page toolbar -->
+                    <!-- <div class="page-toolbar">
+                                <div class="pull-right tooltips btn btn-fit-height green" id="dashboard-report-range" data-original-title="Change dashboard date range" data-placement="top">
+                                    <i class="icon-calendar"></i>&nbsp;
+                                    <span class="thin uppercase hidden-xs"></span>&nbsp;
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                            </div> -->
+                    <!-- END toolbar -->
                 </div>
                 <!-- END page head-->
                 <!-- begin  breadcrumb-->
@@ -240,200 +277,150 @@
 
                         <div class="portlet light portlet-fit portlet-form bordered" id="form_wizard_1">
                             <!--======= content放內容處 ======-->
-                            <div class="portlet-title">
-                                <div class="caption">
-                                    <span class="caption-subject sbold font-red">Personal Information</span>
+                            <div class="mt-element-step">
+                                <div class="row step-thin">
+                                    <div class="col-md-6 bg-grey mt-step-col">
+                                        <div class="mt-step-number bg-white font-grey">1</div>
+                                        <div class="mt-step-title uppercase font-grey-cascade">Step 1</div>
+                                        <div class="mt-step-content font-grey-cascade">Company Information</div>
+                                    </div>
+                                    <div class="col-md-6 bg-grey  mt-step-col active">
+                                        <div class="mt-step-number bg-white font-grey">2</div>
+                                        <div class="mt-step-title uppercase font-grey-cascade">Step 2</div>
+                                        <div class="mt-step-content font-grey-cascade">Contact Information</div>
+                                    </div>
                                 </div>
-                                <!-- <div class="actions">
-                                    <a href="#" class="btn btn-circle btn-info">
-                                        <i class="fa fa-plus"></i>
-                                        <span class="hidden-xs">增加按鈕</span>
-                                    </a>
-
-                                </div> -->
                             </div>
-                            <div class="portlet-body">
+                            <!-- step end -->
+                            <div class="portlet-body width_all">
                                 <form action="#" id="business_info" class="form-horizontal">
                                     <div class="form-body">
+                                        <div class="title_group">
+                                            <h4>Address</h4>
+                                            <hr>
+                                        </div>
+
+                                        <!-- Company Name-->
                                         <div class="form-group">
-                                            <label class="control-label col-md-3">Prefix
-                                                   <span class="required"> * </span>
-                                              </label>
-                                            <div class="col-md-2">
-                                                <select class="form-control" name="select">
-                                                      <option value="tai" disabled selected> Mr. </option>
-                                                      <option value="1000">Mrs.</option>
-                                                </select>
-                                            </div>
-                                            <label class="control-label float_left"></label>
-                                            <div class="col-md-4">
+                                            <label class="control-label col-md-3">Address<span class="required"> * </span></label>
+                                            <div class="col-md-8">
                                                 <div class="input-icon right">
-                                                    <input type="text" name="name" data-required="1" class="form-control" />
+                                                    <input type="text" name="name" data-required="1" class="form-control" placeholder="" /></div>
+                                            </div>
+                                        </div>
+                                        <!-- Address-->
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">City<span class="required"> * </span></label>
+                                            <div class="col-md-6">
+                                                <div class="input-icon right">
+                                                    <input type="text" name="name" data-required="1" class="form-control input-small" />
                                                 </div>
                                             </div>
                                         </div>
-
-
-
-                                        <!-- City-->
+                                        <!-- end -->
                                         <div class="form-group">
-                                            <label class="control-label col-md-3">Username<span class="required"> * </span></label>
-                                            <div class="col-md-4">
+                                            <label class="control-label col-md-3">State/Province</label>
+                                            <div class="col-md-6">
                                                 <div class="input-icon right">
-                                                    <input type="text" name="name" data-required="1" class="form-control" placeholder="Wilson" /> </div>
-
-                                            </div>
-                                        </div>
-
-                                        <!-- Job-->
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3">Job title <span class="required">*</span></label>
-                                            <div class="col-md-4">
-                                                <div class="input-icon right">
-                                                    <input type="text" name="name" data-required="1" class="form-control " />
+                                                    <input type="text" name="name" data-required="1" class="form-control input-small" />
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <!-- end Job-->
-
-
-
-                                        <!-- State/Province-->
-                                        <div class="form-group ">
-                                            <!-- title -->
-                                            <div class="title_group">
-                                                <h4>Contact Information</h4>
-                                                <hr>
-
-                                            </div>
-                                            <!-- title end  -->
-                                            <label class="control-label col-md-3">Job Tilte<span class="required"> * </span></label>
-                                            <div class="col-md-4">
-                                                <div class="input-icon right">
-                                                    <input type="text" name="name" data-required="1" class="form-control" placeholder="" /> </div>
-
                                             </div>
                                         </div>
                                         <!-- start -->
                                         <div class="form-group">
-                                            <!--最外層-->
-                                            <label class="control-label col-md-3">E-mail (Account)<span class="required"> * </span></label>
-                                            <div class="col-md-8">
-                                                <span class="help-block inlineblock">Miao_shih@apsys.net</span><span class="input_link inlineblock"> <a href="#">Add Moblie Phone</a></span>
-                                            </div>
-                                        </div>
-                                        <!-- end -->
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3">E-Mail<span class="required"> * </span></label>
-                                            <div class="col-md-4">
+                                            <label class="control-label col-md-3">Country<span class="required"> * </span></label>
+                                            <div class="col-md-6">
                                                 <div class="input-icon right">
-                                                    <input type="text" name="name" data-required="1" class="form-control" placeholder="" /> </div>
+                                                    <input type="text" name="name" data-required="1" class="form-control input-small" />
+                                                </div>
                                             </div>
                                         </div>
-                                        <!-- end -->
+                                        <!-- start -->
                                         <div class="form-group">
-                                            <label for="inputPassword1" class="col-md-3 control-label">Telephone</label>
+                                            <label class="control-label col-md-3">Zip Code<span class="required"> * </span></label>
+                                            <div class="col-md-6">
+                                                <div class="input-icon right">
+                                                    <input type="text" name="name" data-required="1" class="form-control input-small" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- title -->
+                                        <div class="title_group">
+                                            <h4>Telephone</h4>
+                                            <hr>
+                                        </div>
+
+                                        <!-- start -->
+                                        <div class="form-group">
+                                            <label for="inputPassword1" class="col-md-3 control-label">Telephone<span class="required"> * </span></label>
                                             <div class="col-md-9">
                                                 <input type="text" class="form-control input-inline input-xsmall" placeholder="886">
                                                 <span class="help-inline">-</span>
                                                 <input type="text" class="form-control input-inline input-xsmall" placeholder="2">
                                                 <span class="help-inline">-</span>
                                                 <input type="text" class="form-control input-inline input-medium" placeholder="26560102">
-                                                <!-- <span class="help-inline">  + Country Code/Area Code-Tel number</span> -->
+                                                <span class="help-block">  + Country code - area code - telephone ext. number extension</span>
                                             </div>
                                         </div>
-                                        <!-- end -->
-
+                                        <!-- start -->
                                         <div class="form-group">
-                                            <label for="inputPassword1" class="col-md-3 control-label">Fax</label>
+                                            <label for="inputPassword1" class="col-md-3 control-label">FAX<span class="required"> * </span></label>
                                             <div class="col-md-9">
                                                 <input type="text" class="form-control input-inline input-xsmall" placeholder="886">
                                                 <span class="help-inline">-</span>
                                                 <input type="text" class="form-control input-inline input-xsmall" placeholder="2">
                                                 <span class="help-inline">-</span>
-                                                <input type="text" class="form-control input-inline input-medium" placeholder="26592778">
-                                                <!-- <span class="help-inline">  + Country Code/Area Code-Tel number</span> -->
+                                                <input type="text" class="form-control input-inline input-medium" placeholder="26560102"> ext.
+                                                <input type="text" class="form-control input-inline input-xsmall" placeholder="">
+                                                <span class="help-block">  + Country code - area code - telephone</span>
                                             </div>
                                         </div>
+                                        <!-- title -->
+                                        <div class="title_group">
+                                            <h4>Mail & Website</h4>
+                                            <hr>
+                                        </div>
 
-
+                                        <!-- start-->
                                         <div class="form-group">
-                                            <label class="control-label col-md-3">Moblie Phone</label>
+                                            <label class="control-label col-md-3">Customer Service E-mail <span class="required"> * </span></label>
                                             <div class="col-md-6">
-                                                <div class="input-icon right inlineblock">
-                                                    <input type="text" name="name" data-required="1" class="form-control" placeholder="" /> </div><span class="input_link inlineblock"> <a href="#">Add Moblie Phone</a></span>
-                                            </div>
-                                        </div>
-                                        <!-- end -->
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3">IM (instant Message)</label>
-                                            <div class="col-md-6">
-                                                <hr>
-                                            </div>
-                                        </div>
-
-                                        <!-- end -->
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3">Skype</label>
-                                            <div class="col-md-6">
-                                                <div class="input-icon right inlineblock">
-                                                    <input type="text" name="name" data-required="1" class="form-control" placeholder="Skype ID" /> </div>
-                                            </div>
-                                        </div>
-
-
-                                        <!-- end -->
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3">Wechat</label>
-                                            <div class="col-md-6">
-                                                <div class="input-icon right inlineblock">
-                                                    <input type="text" name="name" data-required="1" class="form-control" placeholder="Wechat ID" /> </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- end -->
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3">Line</label>
-                                            <div class="col-md-6">
-                                                <div class="input-icon right inlineblock">
-                                                    <input type="text" name="name" data-required="1" class="form-control" placeholder="Line ID" /> </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- end -->
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3">WhatsAPP</label>
-                                            <div class="col-md-6">
-                                                <div class="input-icon right inlineblock">
-                                                    <input type="text" name="name" data-required="1" class="form-control" placeholder="WhatsAPP ID" /> </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- <div class="form-group">
-                                            <label class="col-md-3 control-label">Buyer or supplier</label>
-                                            <div class="col-md-9">
-                                                <div class="radio-list">
-                                                    <label class="radio-inline">
-                                                          <input type="radio" name="optionsRadios1" value="option1" > Buyer </label>
-                                                    <label class="radio-inline">
-                                                          <input type="radio" name="optionsRadios1" value="option2" > Supplier </label>
-                                                    <label class="radio-inline">
-                                                          <input type="radio" name="optionsRadios1" value="option3" checked> Buyer and supplier</label>
+                                                <div class="input-icon right">
+                                                    <input type="text" name="name" data-required="1" class="form-control input-medium" />
                                                 </div>
                                             </div>
-                                        </div> -->
+                                        </div>
+                                        <!-- start-->
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Website<span class="required"> * </span></label>
+                                            <div class="col-md-6">
+                                                <div class="input-icon right">
+                                                    <input type="text" name="name" data-required="1" class="form-control input-medium" />
+                                                </div>
+                                                <span class="help-block">  Input "N/A", if your don't have Website</span>
+                                                <!-- <span class="help-block font-red-mint"> </span> -->
+                                            </div>
+                                        </div>
+                                        <div class="note note-danger">
+                                            <!-- <h5><b>Info</b></h5> -->
+                                            <p>(All Changes will show after review.</p>
+                                        </div>
+
+                                        <!-- radiobutton元件 -->
+
+                                        <!-- start -->
                                     </div>
                                     <div class="form-actions">
                                         <div class="row">
-                                            <div class="col-md-offset-5 col-md-9">
+                                            <div class="col-md-offset-4 col-md-9">
+                                                <button type="cancel" class="btn default ">Back</button>
+                                                <button type="save" class="btn default">save</button>
+                                                <button type="submit" class="btn red btn_submit">Request Review</button>
                                                 <!-- <button type="button" class="btn default">Cancel</button> -->
-                                                <button type="submit" class="btn red btn_submit">Save</button>
-
                                             </div>
                                         </div>
-
-
                                     </div>
+
                                 </form>
                             </div>
                             <!--======= end content =======-->

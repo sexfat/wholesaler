@@ -2,14 +2,21 @@ var $ = require("jquery");
 window.$ = $;
 global.jQuery = $;
 
+
 // plugin
 require('../../assets/libs/bootstrap/dist/js/bootstrap.js');
 require('../../assets/js/bootstrap-fileinput.js');
+
 
 //wysihtml test
 require('../../assets/libs/summernote/dist/summernote.js');
 require('../../assets/js/bootstrap-switch.min.js');
 require('../../assets/js/jquery.uniform.min.js');
+
+// require('../../assets/libs/fastselect/dist/fastsearch.js');
+// require('../../assets/libs/fastsearch/dist/fastsearch.js');
+// require('../../assets/libs/fastselect/dist/fastselect.standalone.js');
+
 
 // require('../../assets/js/bootstrap-wysihtml5/wysihtml5-0.3.0.js');
 // require('../../assets/js/bootstrap-wysihtml5/bootstrap-wysihtml5.js');

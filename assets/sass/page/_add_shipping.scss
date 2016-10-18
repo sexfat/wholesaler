@@ -1,0 +1,19 @@
+// 元件 table   主要是寫在 add_shipping
+
+.add_shipping {
+    .highlight {
+        line-height: 2.2;
+
+        .info {
+            height: 30px;
+            margin-top: 0!important;
+        }
+    }
+
+    .country_little {
+        color: #bdbdbd;
+        font-size: 0.5rem;
+        letter-spacing: 0.1rem;
+        margin-left: 6px;
+    }
+}
