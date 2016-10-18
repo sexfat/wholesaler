@@ -46,7 +46,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var contentHeight = $(window).height();
-    $(".contentHeight").css("height", contentHeight/2);
+    $(".contentHeight").css("height", contentHeight);
 
   console.log(contentHeight);
 });
