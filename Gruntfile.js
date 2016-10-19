@@ -169,7 +169,7 @@ module.exports = function(grunt) {
                 }, {
                     expand: true,
                     cwd: './',
-                    src: ['*.html'],
+                    src: ['signup.html','signup2.html'],
                     dest: '/'
                 }, {
                     expand: true,

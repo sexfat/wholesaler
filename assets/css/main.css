@@ -37399,10 +37399,10 @@ body.page-md {
   border-bottom-style: solid; }
 
 .navbar-fixed-top.navbar.page-header {
-  z-index: 9995; }
+  z-index: 999; }
 
 .navbar-static-top.navbar.page-header .page-header-content {
-  z-index: 9995; }
+  z-index: 999; }
 
 .page-header-content {
   background: white;
@@ -44738,6 +44738,18 @@ input.uniform-input:focus {
   width: 80%;
   margin-left: auto;
   margin-right: auto; }
+
+.modal-dialog1 {
+  width: 750px;
+  margin: 0px auto; }
+
+.modal-dialog2 {
+  width: 550px;
+  margin: 0px auto; }
+
+.modal-dialog3 {
+  width: 450px;
+  margin: 0px auto; }
 
 .add_shipping .highlight {
   line-height: 2.2; }

@@ -60,3 +60,22 @@
     width: 80%;
     @include margin-auto;
 }
+
+//彈出視窗大小
+
+
+$topdis:0px;
+
+.modal-dialog1 {
+ width:  750px;
+ margin: $topdis auto;
+}
+
+.modal-dialog2 {
+ width:  550px;
+ margin: $topdis auto;
+}
+.modal-dialog3 {
+ width:  450px;
+ margin: $topdis auto;
+}
