@@ -93,7 +93,7 @@ code {
 	-moz-border-radius: 0;
 }
 div {
-	border-radius: 0 !important;
+	border-radius: 0;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 }
@@ -12239,7 +12239,7 @@ fieldset[disabled]:not(.btn-outline).purple-soft.btn:hover {
 	margin-top: 0;
 	margin-right: 0;
 	display: inline-block;
-	background-image: url("../img/remove-icon-small.png") !important;
+	background-image: url("../images/remove-icon-small.png") !important;
 	background-repeat: no-repeat !important;
 }
 .open.dropdown > .dropdown-toggle {

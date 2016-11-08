@@ -1290,7 +1290,7 @@
 
 
     };
-  console.log("allResults ok");
+  // console.log("allResults ok");
     $.Fastselect = Fastselect;
     $.Fastselect.OptionsCollection = OptionsCollection;
 

@@ -38,6 +38,9 @@ module.exports = function(grunt) {
             jade: {
               files: ['assets/app/*.jade' , 'assets/app/**/*.jade' ],
               tasks: ['jade']
+            },
+            json: {
+              files: ['assets/data/*.json'],
             }
         },
         //sass
@@ -169,12 +172,18 @@ module.exports = function(grunt) {
                 }, {
                     expand: true,
                     cwd: './',
-                    src: ['signup.html','signup2.html'],
+                    src: ['add_shipping_company.html','add_shipping_company2.html'],
                     dest: '/'
                 }, {
                     expand: true,
+                    cwd: 'assets/data/',
+                    src: ['*.json'],
+                    dest: 'assets/data/'
+                },
+                {
+                    expand: true,
                     cwd: 'assets/js/',
-                    src: ['output.js' ,'jquery.slimscroll.min.js','app.min.js','layout.min.js' ],
+                    src: ['output.js' ,'jquery.slimscroll.min.js','app.min.js','layout.min.js','fastselect.standalone.js', 'fastsearch.js' ],
                     dest: 'assets/js/'
                 }]
             }

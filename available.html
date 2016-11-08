@@ -384,17 +384,13 @@
                                     <!-- start -->
                                     <div class="form-group">
                                         <label class="control-label col-md-1">Shows：</label>
-                                        <div class="col-md-9">
-                                            <div class="input-group">
-                                                <div class="radio-list">
-                                                    <label class="radio-inline">
-                                                      <input type="radio" name="optionsRadios" value="option1" checked> Online
-                                                  </label>
-                                                    <label class="radio-inline">
-                                                         <input type="radio" name="optionsRadios" value="option2" > offline
-                                                  </label>
-                                                </div>
-                                            </div>
+                                        <div class="col-md-9" style="padding-top:6px;">
+                                            <a href="javascript:;" class="btn btn-xs blue"> Draft </a>
+                                            <a href="javascript:;" class="btn btn-xs blue">   Review </a>
+                                            <a href="javascript:;" class="btn btn-xs blue"> Online </a>
+                                            <a href="javascript:;" class="btn btn-xs blue"> Offline </a>
+                                            <a href="javascript:;" class="btn btn-xs blue"> Sold Out </a>
+
                                         </div>
                                     </div>
                                     <!-- start -->
@@ -428,6 +424,7 @@
                                                             <td>1000</td>
                                                             <td>
                                                                 <!-- start -->
+                                                                <a class="btn btn-outline red" data-toggle="modal" href="#responsive"><i class="fa fa-edit"></i> Edit</a>
                                                                 <!-- start -->
                                                             </td>
                                                         </tr>
@@ -444,6 +441,32 @@
                                 </form>
                             </div>
                             <!--======= end content =======-->
+                            <!--modal box對話框放置位置-->
+                            <div id="responsive" class="modal fade" tabindex="-1" aria-hidden="true" style="margin-top:100px">
+                                <div class="modal-dialog3">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                            <h4 class="modal-title">Edit Available QTY</h4>
+                                        </div>
+
+
+
+                                        <div class="modal-body">
+                                            <!--==內容==-->
+                                            Available QTY now is 9,999, this product's MOQ is 999.
+                                            <input type="text" name="name" class="form-control input-inline input-small margintop-10" placeholder="units">
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" data-dismiss="modal" class="btn dark btn-outline">Cancel</button>
+                                            <button type="button" class="btn green">  Save  </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
+
                         </div>
 
                     </div>

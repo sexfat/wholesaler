@@ -6,7 +6,7 @@
 
         .info {
             height: 30px;
-            margin-top: 0!important;
+            margin-top: 0 !important;
         }
     }
 
@@ -16,4 +16,18 @@
         letter-spacing: 0.1rem;
         margin-left: 6px;
     }
+}
+
+.addnew {
+  width: 100%;
+    .fstMultipleMode {
+      display: block;
+        .fstControls {
+            width: 100% !important;
+        }
+    }
+}
+
+.newarea {
+  margin-top: 10px;
 }

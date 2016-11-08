@@ -376,14 +376,21 @@
                                     <i class="icon-settings font-blue"></i>
                                     <span class="caption-subject font-blue bold uppercase"> Manage Products</span>
                                 </div>
+                                <div class="form-group showme">
+                                    <button type="button" class="btn btn-info">online</button>
+                                    <button type="button" class="btn btn-info">offline</button>
+                                    <button type="button" class="btn default">delete</button>
+
+                                </div>
+
                                 <div class="actions">
-                                    <a href="add_new_product_single.html" class="btn btn-circle btn-info">
+                                    <a href="add_new_product_single.html" class="btn btn-info">
                                         <i class="fa fa-plus"></i>
                                         <span class="hidden-xs">Add New</span>
                                     </a>
                                 </div>
                                 <div class="actions">
-                                    <a href="add_new_product_single.html" class="btn btn-circle btn-info">
+                                    <a href="add_new_product_single.html" class="btn btn-info">
                                         <i class="fa fa-plus"></i>
                                         <span class="hidden-xs">Add From E-Catalog</span>
                                     </a>
@@ -402,63 +409,27 @@
                                                 </div>
                                                 <!-- start -->
                                                 <div class="form-group">
-                                                    <label class="control-label col-md-1">Shows：</label>
-                                                    <div class="col-md-9">
-                                                        <div class="input-group">
-                                                            <div class="radio-list">
-                                                                <label class="radio-inline">
-                                                                    <input type="radio" name="optionsRadios" value="option1" checked> Draft
-                                                                </label>
-                                                                <label class="radio-inline">
-                                                                    <input type="radio" name="optionsRadios" value="option2" > Review
-                                                                </label>
-                                                                <label class="radio-inline">
-                                                                      <input type="radio" name="optionsRadios" value="option2" > Online
-                                                                </label>
-                                                                <label class="radio-inline">
-                                                                      <input type="radio" name="optionsRadios" value="option2" > offline
-                                                                </label>
-                                                                <label class="radio-inline">
-                                                                       <input type="radio" name="optionsRadios" value="option2" > Rejected
-                                                                </label>
+                                                    <label class="control-label inlineblock">Shows：</label>
+                                                    <div class="inlineblock">
+                                                        <div class="input-group margintop-4">
+                                                            <div class="btn-group" data-toggle="buttons">
+                                                                <label class="btn btn-default">
+                                                                        <input type="checkbox" class="toggle"> Draft </label>
+                                                                <label class="btn btn-default active">
+                                                                        <input type="checkbox" class="toggle"> Review </label>
+                                                                <label class="btn btn-default active">
+                                                                        <input type="checkbox" class="toggle"> Online </label>
+                                                                <label class="btn btn-default active">
+                                                                        <input type="checkbox" class="toggle"> offline </label>
+                                                                <label class="btn btn-default active">
+                                                                        <input type="checkbox" class="toggle"> Rejected </label>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-
-
                                                 <!-- start -->
-                                                <div class="function_btn">
-                                                    <select name="product_status" class="form-control form-filter input-sm">
-                                                  <option value="online"><i class="fa fa-glass icon-success"></i>Online</option>
-                                                  <option value="Offline">Offline</option>
-                                                  <option value="notpublished">Delete</option>
-                                                </select>
-                                                </div>
-
-
 
                                             </div>
-                                            <!-- <div class="col-md-3 pull-left">
-                                                <select name="product_category " class="form-control">
-                                                            <option value="">Select...</option>
-                                                            <option value="1">Mens</option>
-                                                            <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Footwear</option>
-                                                            <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clothing</option>
-                                                            <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessories</option>
-                                                            <option value="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fashion Outlet</option>
-                                                            <option value="6">Football Shirts</option>
-                                                            <option value="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premier League</option>
-                                                            <option value="8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Football League</option>
-                                                            <option value="9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serie A</option>
-                                                            <option value="10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bundesliga</option>
-                                                            <option value="11">Brands</option>
-                                                            <option value="12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adidas</option>
-                                                            <option value="13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nike</option>
-                                                            <option value="14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Airwalk</option>
-                                                            <option value="15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USA Pro</option>
-                                                            <option value="16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kangol</option>
-                                                        </select></div> -->
                                             <div class="col-md-7 ">
                                                 <div class="table-group-actions pull-right">
                                                     <span></span>
@@ -480,13 +451,13 @@
                                                         <th width="7%" class="sorting" aria-controls="ajax" rowspan="1">Item No.</th>
                                                         <th width="22%" class="sorting" tabindex="0" rowspan="1" colspan="1">Product Name</th>
                                                         <th width="4%" class="sorting" tabindex="0" rowspan="1" colspan="1">Brand</th>
-                                                        <th width="4%">Total QTY</th>
-                                                        <th width="9%"> Actions </th>
+                                                        <th width="7%">Total QTY</th>
+                                                        <th width="6%"> Actions </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr role="row" class="odd">
-                                                        <td><input name="id[]" type="checkbox" class="checkboxes" value="1"></td>
+                                                        <td><input name="id[]" type="checkbox" class="checkboxes clickss" value="1"></td>
                                                         <td>online</td>
                                                         <td>
                                                             <a href="javascript:;">
@@ -498,18 +469,34 @@
                                                         <td>Nike</td>
                                                         <td>1,000</td>
                                                         <td rowspan="1" colspan="1">
-                                                            <select name="product_status" class="form-control form-filter input-sm">
-                                                            <option value="edit"><i class="fa fa-glass icon-success"></i>Edit</option>
-                                                            <option value="edit"><i class="fa fa-glass icon-success"></i>Edit QTY</option>
-                                                            <option value="notpublished">Online</option>
-                                                            <option value="notpublished">Offline</option>
-                                                            <option value="deleted">Delete</option>
-                                                          </select>
+                                                            <div class="btn-group">
+                                                                <button class="btn blue btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Action
+                                                                        <i class="fa fa-angle-down"></i>
+                                                                    </button>
+                                                                <ul class="dropdown-menu" role="menu">
+                                                                    <li>
+                                                                        <a href="#"> Edit </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"> Edit QTY </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Online</a>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <a href="#">Offline</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Delete</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </td>
                                                     </tr>
 
                                                     <tr role="row" class="even">
-                                                        <td><input name="id[]" type="checkbox" class="checkboxes" value="1"></td>
+                                                        <td><input name="id[]" type="checkbox" class="checkboxes clickss" value="1"></td>
                                                         <td>online</td>
                                                         <td>
                                                             <a href="javascript:;">
@@ -521,18 +508,32 @@
                                                         <td>Nike</td>
                                                         <td>1,000</td>
                                                         <td rowspan="1" colspan="1">
-                                                            <select name="product_status" class="form-control form-filter input-sm">
-                                                            <option value="edit"><i class="fa fa-glass icon-success"></i>Edit</option>
-                                                            <option value="edit"><i class="fa fa-glass icon-success"></i>Edit QTY</option>
-                                                            <option value="notpublished">Online</option>
-                                                            <option value="notpublished">Offline</option>
-                                                            <option value="deleted">Delete</option>
-                                                          </select>
+                                                            <button class="btn blue btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Action
+                                                                  <i class="fa fa-angle-down"></i>
+                                                              </button>
+                                                            <ul class="dropdown-menu" role="menu">
+                                                                <li>
+                                                                    <a href="#"> Edit </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#"> Edit QTY </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Online</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="#">Offline</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Delete</a>
+                                                                </li>
+                                                            </ul>
                                                         </td>
                                                     </tr>
 
                                                     <tr role="row" class="odd">
-                                                        <td><input name="id[]" type="checkbox" class="checkboxes" value="1"></td>
+                                                        <td><input name="id[]" type="checkbox" class="checkboxes clickss" value="1"></td>
                                                         <td>online</td>
                                                         <td>
                                                             <a href="javascript:;">
@@ -544,18 +545,32 @@
                                                         <td>Nike</td>
                                                         <td>1,000</td>
                                                         <td rowspan="1" colspan="1">
-                                                            <select name="product_status" class="form-control form-filter input-sm">
-                                                            <option value="edit"><i class="fa fa-glass icon-success"></i>Edit</option>
-                                                            <option value="edit"><i class="fa fa-glass icon-success"></i>Edit QTY</option>
-                                                            <option value="notpublished">Online</option>
-                                                            <option value="notpublished">Offline</option>
-                                                            <option value="deleted">Delete</option>
-                                                          </select>
+                                                            <button class="btn blue btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Action
+                                                                  <i class="fa fa-angle-down"></i>
+                                                              </button>
+                                                            <ul class="dropdown-menu" role="menu">
+                                                                <li>
+                                                                    <a href="#"> Edit </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#"> Edit QTY </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Online</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="#">Offline</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Delete</a>
+                                                                </li>
+                                                            </ul>
                                                         </td>
                                                     </tr>
 
                                                     <tr role="row" class="even">
-                                                        <td><input name="id[]" type="checkbox" class="checkboxes" value="1"></td>
+                                                        <td><input name="id[]" type="checkbox" class="checkboxes clickss" value="1"></td>
                                                         <td>online</td>
                                                         <td>
                                                             <a href="javascript:;">
@@ -567,13 +582,27 @@
                                                         <td>Nike</td>
                                                         <td>1,000</td>
                                                         <td rowspan="1" colspan="1">
-                                                            <select name="product_status" class="form-control form-filter input-sm">
-                                                            <option value="edit"><i class="fa fa-glass icon-success"></i>Edit</option>
-                                                            <option value="edit"><i class="fa fa-glass icon-success"></i>Edit QTY</option>
-                                                            <option value="notpublished">Online</option>
-                                                            <option value="notpublished">Offline</option>
-                                                            <option value="deleted">Delete</option>
-                                                          </select>
+                                                            <button class="btn blue btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Action
+                                                                  <i class="fa fa-angle-down"></i>
+                                                              </button>
+                                                            <ul class="dropdown-menu" role="menu">
+                                                                <li>
+                                                                    <a href="#"> Edit </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#"> Edit QTY </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Online</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="#">Offline</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Delete</a>
+                                                                </li>
+                                                            </ul>
                                                         </td>
                                                     </tr>
 

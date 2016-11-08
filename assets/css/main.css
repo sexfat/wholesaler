@@ -5932,7 +5932,7 @@ code {
   -moz-border-radius: 0; }
 
 div {
-  border-radius: 0 !important;
+  border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0; }
 
@@ -18071,7 +18071,7 @@ fieldset[disabled]:not(.btn-outline).purple-soft.btn:hover {
   margin-top: 0;
   margin-right: 0;
   display: inline-block;
-  background-image: url("../img/remove-icon-small.png") !important;
+  background-image: url("../images/remove-icon-small.png") !important;
   background-repeat: no-repeat !important; }
 
 .open.dropdown > .dropdown-toggle {
@@ -39787,6 +39787,9 @@ sup {
     color: #505050;
     margin-left: 25px; }
 
+.modal-content {
+  padding: 15px; }
+
 .label-danger {
   margin-right: 10px;
   float: left; }
@@ -44692,6 +44695,15 @@ input.uniform-input:focus {
 .location a {
   margin-top: 4px; }
 
+.showme {
+  display: none; }
+
+.blocks {
+  display: block;
+  margin-left: 186px;
+  margin-top: 4px;
+  position: absolute; }
+
 #full-width-all {
   width: 100%;
   background-color: #e9eff3;
@@ -44761,6 +44773,16 @@ input.uniform-input:focus {
   font-size: 0.5rem;
   letter-spacing: 0.1rem;
   margin-left: 6px; }
+
+.addnew {
+  width: 100%; }
+  .addnew .fstMultipleMode {
+    display: block; }
+    .addnew .fstMultipleMode .fstControls {
+      width: 100% !important; }
+
+.newarea {
+  margin-top: 10px; }
 
 .height-bottom {
   height: 30%; }
