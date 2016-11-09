@@ -68,7 +68,7 @@ $(document).ready(function() {
 
   $(".clickss").click(function(){
     $(".showme").addClass('blocks');
-    console.log('showme ok');
+    //console.log('showme ok');
   });
 
 

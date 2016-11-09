@@ -172,7 +172,7 @@ module.exports = function(grunt) {
                 }, {
                     expand: true,
                     cwd: './',
-                    src: ['add_shipping_company.html','add_shipping_company2.html'],
+                    src: ['products.html'],
                     dest: '/'
                 }, {
                     expand: true,
