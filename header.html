@@ -113,6 +113,17 @@
         <!-- END -->
         <div class="header_top clearfix">
             <div class="logos">
+                <!-- begin sideMenu icon-->
+                <div><!--class="nav-panel-content"-->
+                    <ul><!--class="nav nav-panel"-->
+                        <li>
+                            <div class="menu-toggler sidebar-toggler">
+                                <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+                            </div>
+                        </li>          
+                    </ul>
+                </div>
+                <!-- END sideMenu icon-->
                 <a href="javascript:;">
                     <img src="assets/images/logo-light.png">
                 </a>
@@ -125,27 +136,190 @@
 
         </div>
 
-        <div class="nav-panel-content">
-            <ul class="nav nav-panel">
-                <li>
-                    <div class="menu-toggler sidebar-toggler">
-                        <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
-                    </div>
-                </li>
-                <li class="active">
-                    <a href="javascript:;">Home</a>
-                </li>
-                <span class="line"></span>
-                <li>
-                    <a href="javascript:;">Buying</a>
-                </li>
-                <span class="line"></span>
-                <li>
-                    <a href="javascript:;">Selling</a>
-                </li>
-            </ul>
-        </div>
     </div>
     <!-- END headER -->
+
+     <!-- begin CONTaiNER -->
+    <div class="page-container">
+        <!-- begin SiDEBaR -->
+        <div class="page-sidebar-wrapper">
+            <!-- begin SiDEBaR -->
+            <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+            <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+            <div class="page-sidebar navbar-collapse collapse">
+                <!-- begin SiDEBaR MENU -->
+                <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <ul class="page-sidebar-menu" data-slide-speed="200" data-auto-scroll="true" data-keep-expanded="false">
+                    <li class="sidebar-leftfuction-wrapper">
+                        <!-- END RESpONSiVE QUiCK SEaRCH FORM -->
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-info"></i>
+                            <span class="title">Basic Setting</span>
+                            <!--Manage products-->
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/wholesaler_info.html">
+                                    <i class="fa fa-angle-right"></i>Wholesaler info
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/payment_account.html">
+                                    <i class="fa fa-angle-right"></i>payment account
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/return_info.html">
+                                    <i class="fa fa-angle-right"></i>Return info
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/notification.html">
+                                    <i class="fa fa-angle-right"></i>Notification Options
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/shipping.html">
+                                    <i class="fa fa-angle-right"></i>Shipping info
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link nav-toggle" href="javascript:;">
+                            <i class="fa fa-truck"></i>
+                            <span class="title">Shipping Rate</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/shipping_area.html">
+                                    <i class="fa fa-angle-right"></i>Shipping area
+                                </a>
+                            </li>
+                            <!--li class="nav-item "><a href="add_shipping_area.html" class="nav-link "><i class="fa fa-angle-right"></i>add Shipping area</a></li-->
+                            <li class="nav-item">
+                                <a class="nav-link " href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/shipping_method.html">
+                                    <i class="fa fa-angle-right"></i>Shipping Method
+                                </a>
+                            </li>
+                            <!--li class="nav-item"><a href="add_shipping_method.html" class="nav-link "><i class="fa fa-angle-right"></i>add Shipping Method</a></li><li class="nav-item"><a href="exclude_shipping_locations.html" class="nav-link "><i class="fa fa-angle-right"></i> Exclude Shipping Locations</a></li-->
+                        </ul>
+                    </li>
+                    <!-- end Setting -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-toggle" href="javascript:;">
+                            <i class="icon-layers"></i>
+                            <span class="title">products</span>
+                            <!--Manage products-->
+                            <span class="selected"></span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/products.html">
+                                    <i class="fa fa-angle-right"></i>products
+                                </a>
+                                <!--all products-->
+                            </li>
+                            <!--li><a href="add_new_product_single.html"><i class="fa fa-angle-right"></i>add New product-single</a></li><li class="nav-item"><a href="add_new_product_multiple.html"><i class="fa fa-angle-right"></i>add New product-Multiple</a>
+                                                                                                                <!--Multiple File Upload
+                        </li -->
+                        </ul>
+                    </li>
+                    <!-- Orders-->
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-basket"></i>
+                            <span class="title">Orders</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/manage_orders.html">
+                                    <i class="fa fa-angle-right"></i> Orders
+                                    <!--span class="badge badge-danger">3</span-->
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--account-->
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-user-follow"></i>
+                            <span class="title">account</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/monthly_report.html">
+                                    <i class="fa fa-angle-right"></i>Monthly Report
+                                </a>
+                            </li>
+                            <li>
+                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/withdraw_money.html">
+                                    <i class="fa fa-angle-right"></i>Withdraw Money
+                                </a>
+                            </li>
+                            <li>
+                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/refund.html">
+                                    <i class="fa fa-angle-right"></i>Refund
+                                </a>
+                            </li>
+                            <li>
+                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/authentication.html">
+                                    <i class="fa fa-angle-right"></i> paypal account authentication
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--after Service-->
+                    <li>
+                        <a href="javascript:;">
+                            <i class=" fa fa-smile-o"></i>
+                            <span class="title">after Service</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/qa_center.html">
+                                    <i class="fa fa-angle-right"></i>Qa Center
+                                </a>
+                            </li>
+                            <li>
+                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/feedback_center.html">
+                                    <i class="fa fa-angle-right"></i>Feedback Center
+                                    <!--span class="badge badge-info"> 2 </span-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="file:///C:/Users/hoten/Desktop/20160831wholesaler/ez_order_wholesaler/dispute_center.html">
+                                    <i class="fa fa-angle-right"></i>Dispute Center
+                                    <!--span class="badge badge-success">1</span-->
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Report-->
+                </ul>
+                <!-- END SiDEBaR MENU -->
+            </div>
+        </div>
+        <!-- end sidebar-->
+        </div>
+        <!-- end container-->
+
+    <!--[if lt iE 9]>
+                                                                                                    <script src="../assets/global/plugins/respond.min.js"></script>
+                                                                                                    <script src="../assets/global/plugins/excanvas.min.js"></script>
+                                                                                                    <![endif]-->
+    <!-- begin CORE pLUGiNS -->
+    <script src="assets/js/output.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="assets/js/app.min.js" type="text/javascript"></script>
+    <script src="assets/js/layout.min.js" type="text/javascript"></script>
 </body>
 </html>
