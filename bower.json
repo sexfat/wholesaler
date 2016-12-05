@@ -32,7 +32,9 @@
     "jquery.stellar": "^0.6.2",
     "jquery-smooth-scrolling": "~1.5.2",
     "moment": "~2.10.0",
-    "fastselect": "^0.6.1"
+    "fastselect": "^0.6.1",
+    "jqueryui": "^1.12.1",
+    "picturecut": "^1.0.0"
   },
   "devDependencies": {
     "fullpage.js": "^2.8.2",

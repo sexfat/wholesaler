@@ -15,8 +15,9 @@ var summernote = require('../../assets/libs/summernote/dist/summernote.js');
 var bootstrap_switch = require('../../assets/js/bootstrap-switch.min.js');
 var uniform = require('../../assets/js/jquery.uniform.min.js');
 
-
 var slimscroll = require('../../assets/js/jquery.slimscroll.min.js');
+var jqueryui = require('../../assets/libs/jqueryui/jquery-ui.min.js');
+var picturecut = require('../../assets/libs/picturecut/src/jquery.picture.cut.js');
 
 // var app = require('../../assets/js/app.min.js');
 // var layout = require('../../assets/js/layout.min.js');
@@ -45,10 +46,9 @@ var slimscroll = require('../../assets/js/jquery.slimscroll.min.js');
 $(document).ready(function() {
     // console.log("hello world");
     $('.summernote').summernote({
-       height: 300,
-       focus: true
-    }
-    );
+        height: 300,
+        focus: true
+    });
     // console.log("summereditor ok");
 
 
@@ -59,22 +59,33 @@ $(document).ready(function() {
     var contentHeight = $(window).height();
     $(".contentHeight").css("height", contentHeight);
 
-  // console.log(contentHeight);
+    // console.log(contentHeight);
 
 });
 
 
 $(document).ready(function() {
 
-  $(".clickss").click(function(){
-    $(".showme").addClass('blocks');
-    //console.log('showme ok');
-  });
+    $(".clickss").click(function() {
+        $(".showme").addClass('blocks');
+        //console.log('showme ok');
+    });
+});
 
 
-  });
+$(document).ready(function() {
+
+  $("#container_image").PictureCut({
+                    InputOfImageDirectory       : "image",
+                    PluginFolderOnServer        : "/jquery.picture.cut/",
+                    FolderOnServer              : "/uploads/",
+                    EnableCrop                  : true,
+                    CropWindowStyle             : "Bootstrap"
+                });
 
 
+
+});
 
 
 // $(document).ready(function() {

@@ -36,11 +36,11 @@ module.exports = function(grunt) {
                 tasks: ['browserify']
             },
             jade: {
-              files: ['assets/app/*.jade' , 'assets/app/**/*.jade' ],
-              tasks: ['jade']
+                files: ['assets/app/*.jade', 'assets/app/**/*.jade'],
+                tasks: ['jade']
             },
             json: {
-              files: ['assets/data/*.json'],
+                files: ['assets/data/*.json'],
             }
         },
         //sass
@@ -161,29 +161,33 @@ module.exports = function(grunt) {
                     dest: 'assets/simple-line-icons/'
                 }, {
                     expand: true,
+                    cwd: 'assets/font',
+                    src: ['**/*', '*'],
+                    dest: 'assets/font'
+                }, {
+                    expand: true,
                     cwd: 'assets/images/',
                     src: ['*'],
                     dest: 'assets/images/'
                 }, {
                     expand: true,
                     cwd: 'assets/css/',
-                    src: ['main.css' , 'main.min.css'],
+                    src: ['main.css', 'main.min.css'],
                     dest: 'assets/css/'
                 }, {
                     expand: true,
                     cwd: './',
-                    src: ['products.html'],
+                    src: ['*.html'],
                     dest: '/'
                 }, {
                     expand: true,
                     cwd: 'assets/data/',
                     src: ['*.json'],
                     dest: 'assets/data/'
-                },
-                {
+                }, {
                     expand: true,
                     cwd: 'assets/js/',
-                    src: ['output.js' ,'jquery.slimscroll.min.js','app.min.js','layout.min.js','fastselect.standalone.js', 'fastsearch.js' ],
+                    src: ['output.js', 'jquery.slimscroll.min.js', 'app.min.js', 'layout.min.js', 'fastselect.standalone.js', 'fastsearch.js'],
                     dest: 'assets/js/'
                 }]
             }
@@ -245,7 +249,7 @@ module.exports = function(grunt) {
 
     // define default task
     // grunt.registerTask('default', ['browserSync','browserify', 'watch', 'jade', 'jshint']);
-    grunt.registerTask('default', ['browserSync', 'browserify', 'watch','cssmin']);
+    grunt.registerTask('default', ['browserSync', 'browserify', 'watch', 'cssmin']);
     // grunt.registerTask('mini', ['cssmin']);
     grunt.registerTask('build', ['cssmin', 'compress']);
     // grunt.registerTask('copy', ['copy']);
