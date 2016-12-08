@@ -39917,12 +39917,14 @@ business_info.html-Business Logo 圖片間距
 .nav-panel-content {
   height: 40px; }
 
-.header_top .logos {
-  text-align: center; }
-  .header_top .logos .sidebar-toggler.menu-toggler {
-    float: left;
-    height: 50px;
-    margin-top: 0px; }
+.header_top {
+  border-bottom: 3px solid #5bc0de; }
+  .header_top .logos {
+    text-align: center; }
+    .header_top .logos .sidebar-toggler.menu-toggler {
+      float: left;
+      height: 50px;
+      margin-top: 0px !important; }
 
 @font-face {
   font-family: "summernote";
