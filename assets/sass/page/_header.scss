@@ -1,17 +1,18 @@
-.nav-panel-content{
+﻿.nav-panel-content{
 	height:40px;
 }
 .page-sidebar-fixed .page-sidebar{
-	// top:150px;
+	 top:150px;
 	// left: 0px;
 }
 .header_top {
+	border-bottom: 3px solid #5bc0de;
 	.logos{
 		text-align: center;
 		.sidebar-toggler.menu-toggler{
 			float: left;
 			height: 50px;
-			margin-top: 0px; 
+			margin-top: 0px !important; 
 		}
 	}
 }

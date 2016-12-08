@@ -39917,6 +39917,9 @@ business_info.html-Business Logo 圖片間距
 .nav-panel-content {
   height: 40px; }
 
+.page-sidebar-fixed .page-sidebar {
+  top: 150px; }
+
 .header_top {
   border-bottom: 3px solid #5bc0de; }
   .header_top .logos {
