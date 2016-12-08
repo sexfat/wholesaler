@@ -8,11 +8,15 @@
 .header_top {
 	border-bottom: 3px solid #5bc0de;
 	.logos{
-		text-align: center;
+		text-align: left;
 		.sidebar-toggler.menu-toggler{
 			float: left;
 			height: 50px;
 			margin-top: 0px !important; 
 		}
 	}
+}
+
+.page-header-fixed .page-container{
+	    margin-top: 130px; /*adjust for .page-container */
 }

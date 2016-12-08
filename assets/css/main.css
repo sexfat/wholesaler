@@ -39923,11 +39923,15 @@ business_info.html-Business Logo 圖片間距
 .header_top {
   border-bottom: 3px solid #5bc0de; }
   .header_top .logos {
-    text-align: center; }
+    text-align: left; }
     .header_top .logos .sidebar-toggler.menu-toggler {
       float: left;
       height: 50px;
       margin-top: 0px !important; }
+
+.page-header-fixed .page-container {
+  margin-top: 130px;
+  /*adjust for .page-container */ }
 
 @font-face {
   font-family: "summernote";
