@@ -37844,10 +37844,10 @@ body.page-md {
   font-size: 16px; }
 
 .navbar.page-header .top-menu .navbar-nav > li.quick-sidebar-toggler > i::before {
-  content: "��"; }
+  content: "嚙踝蕭"; }
 
 .page-quick-sidebar-open .navbar.page-header .top-menu .navbar-nav > li.quick-sidebar-toggler > i::before {
-  content: "��"; }
+  content: "嚙踝蕭"; }
 
 .navbar.page-header .top-menu .navbar-nav > li.quick-sidebar-toggler > i:hover {
   color: #a4b4bb; }
@@ -39191,7 +39191,7 @@ body.page-md {
   color: white !important; }
 
 .page-quick-sidebar-open .page-quick-sidebar-toggler > i::before {
-  content: "��"; }
+  content: "嚙踝蕭"; }
 
 .page-quick-sidebar-wrapper {
   background: #21282e;
@@ -39913,6 +39913,25 @@ business_info.html-Business Logo 圖片間距
 
 .input-group-addon:not(:first-child) {
   border-left: 0; }
+
+.nav-panel-content {
+  height: 40px; }
+
+.page-sidebar-fixed .page-sidebar {
+  top: 150px; }
+
+.header_top {
+  border-bottom: 3px solid #5bc0de; }
+  .header_top .logos {
+    text-align: left; }
+    .header_top .logos .sidebar-toggler.menu-toggler {
+      float: left;
+      height: 50px;
+      margin-top: 0px !important; }
+
+.page-header-fixed .page-container {
+  margin-top: 130px;
+  /*adjust for .page-container */ }
 
 @font-face {
   font-family: "summernote";

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap TouchSpin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A mobile and touch friendly input spinner component for Bootstrap 3.">
+    <meta name="author" content="István Ujj-Mészáros">
+
+    <meta itemprop="name" content="Bootstrap Touchspin">
+    <meta itemprop="description" content="A mobile and touch friendly input spinner component for Bootstrap 3.">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css" rel="stylesheet" type="text/css" media="all">
+    <link href="src/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css" media="all">
+    <link href="demo.css" rel="stylesheet" type="text/css" media="all">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+    <script src="src/jquery.bootstrap-touchspin.js"></script>
+ <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+   
+<div>
+    <div class="price">
+        TEXT will become red if input gt than 20　！
+    </div>
+     <div class="price2 red">
+        TEXT will become red if input gt than 30　！
+    </div>
+    </div>
+    <div>
+    <input id="demo3_21" type="text" value="" name="demo3_21">
+    <script>
+            $("input[name='demo3_21']").TouchSpin({
+                initval: 40
+            });
+        </script>
+    <input id="demo3_22" type="text" value="33" name="demo3_22">
+    
+        <script>
+            $("input[name='demo3_22']").TouchSpin({
+                initval: 40
+            });
+        </script>
+    </div>
+        <script>
+$( document ).ready(function() {
+ $("input[name='demo3_21']").siblings().on('click', function(){
+    if($("input[name='demo3_21']").val()  > 20 &&  $("input[name='demo3_21']").val()  < 30 ){
+          $(".price2").removeClass('red');
+         $(".price").addClass('red');
+    }else if( $("input[name='demo3_21']").val() >= 30 ){ 
+            $(".price").removeClass('red');
+             $(".price2").addClass('red');
+            }else{
+                 $(".price").removeClass('red');
+            }
+ });
+          
+});
+        </script>
+</body>
+
+</html>
